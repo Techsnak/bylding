@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="css/projects.css">
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="brand-logo">
+          <img src="assets/Logo.png" alt="Company Logo" class="byldinglogo">
+        </div>
+        <ul class="nav-menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link" id="menu-link">Company Tools</a>
+            <i class="fa fa-angle-down" aria-hidden="true" id="fa fa-angle-down"></i>
+            <div class="dropdown">
+              <div class="dropdown-section">
+                <a href="#" class="main-topic">Core Tools</a>
+                <div class="subtopics">
+                  <a href="#">Alters</a>
+                  <a href="#">Company</a>
+                  <a href="#">Sub Company</a>
+                </div>
+              </div>
+              <div class="dropdown-section">
+                <a href="#" class="main-topic">Projects</a>
+                <div class="subtopics">
+                  <a href="#">Project A</a>
+                  <a href="#">Project B</a>
+                </div>
+              </div>
+              <div class="dropdown-section">
+                <a href="#" class="main-topic">User Management</a>
+                <div class="subtopics">
+                  <a href="#">User</a>
+                  <a href="#">Company Details</a>
+                  <a href="#">User Time Off</a>
+                  <a href="#">User Role Setting</a>
+                </div>
+              </div>
+              <div class="dropdown-section">
+                <a href="#" class="main-topic">Master</a>
+                <div class="subtopics">
+                  <a href="#">Country</a>
+                  <a href="#">State</a>
+                  <a href="#">City</a>
+                  <a href="#">Leave Category</a>
+                  <a href="#">Job Site State</a>
+                  <a href="#">Alert Type</a>
+                  <a href="#">Bid Type</a>
+                  <a href="#">Project Type</a>
+                  <a href="#">Lead Source</a>
+                  <a href="#">Change Order Reason</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="nav-search">
+          <i class="fas fa-search"></i>
+          <input type="search" id="search" placeholder="Search">
+        </div>
+        <div class="nav-items">
+          <img src="images/image-removebg-preview (6) 1.png" alt="USA Flag" class="flag">
+          <i class="fas fa-moon"></i>
+          <img src="images/image 11.png" alt="User" class="user">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Second section (Submenu) -->
+  <div class="submenu">
+    <div class="submenu-container">
+      <!-- PROJECTS title -->
+      <div class="submenu-title">
+        <span>PROJECTS</span>
+      </div>
+      <ul class="submenu-list">
+        <li class="menu-item">
+          <a href="#" class="projects-link" id="projects-link">Financial Views</a>
+          <i class="fa fa-angle-down-2" aria-hidden="true" id="fa fa-angle-down-2"></i>
+          <div class="dropdown">
+            <div class="dropdown-section">
+              <a href="#" class="main-topic">Financial Views</a>
+              <div class="subtopics">
+                <a href="#">Prime Contract</a>
+                <a href="#">Prime Contract SOV</a>
+                <a href="#">Schedule</a>
+                <a href="#">Sub Contracts</a>
+                <a href="#">Prime Contract</a>
+                <a href="#">Prime Contract SOV</a>
+                <a href="#">Schedule</a>
+                <a href="#">Sub Contracts</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card-max-width" style="display: flex; padding: 50px; flex-direction: column;">
+      <table class="table table-bordered" style="border-radius: 20px;">
+        <thead style="background-color: #F8F8F8;">
+          <tr>
+            <th>Job Number</th>
+            <th>Project Name</th>
+            <th>Project Type</th>
+            <th>Client/Owner</th>
+            <th>Contact Person</th>
+            <th>Lead Source</th>
+            <th>Budget Retainage Rounding</th>
+            <th>Project Participants</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>24-002</td>
+            <td>Project 0001</td>
+            <td>Test</td> 
+            <td>Data 6</td>
+            <td>Data 7</td>
+            <td>Data 8</td>
+            <td>Data 9</td>
+            <td>Data 10</td>
+          </tr>
+          <tr>
+            <td>Data 6</td>
+            <td>Data 7</td>
+            <td>Data 8</td>
+            <td>Data 9</td>
+            <td>Data 10</td>
+            <td>Data 8</td>
+            <td>Data 9</td>
+            <td>Data 10</td>
+          </tr>
+          <!-- Add more rows with dummy data as needed -->
+        </tbody>
+      </table>
+      <div class="project-view">
+        <button class="btn-create-project" type="submit">Edit Project</button>
+        <button class="btn-create-project" type="submit">Cancel</button>
+      </div>
+  </div>
+  </div>
+
+  <script src="js/scripts.js"></script>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
