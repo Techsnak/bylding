@@ -269,14 +269,14 @@
 
 .image-container {
   position: fixed;
-  top: 35%;
-  left: 75%;
+  top: 34%;
+  left: 77%;
   transform: translate(-50%, -50%);
 }
 
 
 .image-container img {
-  width: 450px;
+  width: 550px;
   height: auto;
   display: none;
 }
@@ -295,45 +295,45 @@
   .blue-square {
     width: 820px;
     height: 650px;
-  }
+    }
 
-  .image-container {
-    top: 29%;
-    left: 85%;
-  }
+    .image-container {
+      top: 33%;
+      left: 82%;
+    }
+    
+    .image-container img {
+      width: 410px;
+    }
 
-  .image-container img {
-    width: 410px;
-  }
+    .blue-title {
+        margin-bottom: 265px;
+        margin-right: 35px;
+        font-size: 48px;
+        line-height: 1.1;
+    }
 
-  .blue-title {
-    margin-bottom: 265px;
-    margin-right: 35px;
-    font-size: 48px;
-    line-height: 1.1;
-  }
+    .blue-para {
+        font-size: 25px;
+        margin-bottom: 170px;
+        margin-right: 35px;
+        line-height: 1;
+    }
 
-  .blue-para {
-    font-size: 25px;
-    margin-bottom: 170px;
-    margin-right: 35px;
-    line-height: 1;
-  }
+    .learn-more-btn {
+        font-size: 25px;
+        width: 170px;
+        height: 60px;
+    }
 
-  .learn-more-btn {
-    font-size: 25px;
-    width: 170px;
-    height: 60px;
-  }
+    .btn-Login {
+      margin-top: 7px;
+      margin-bottom: 6px;
+    }
 
-  .btn-Login {
-    margin-top: 7px;
-    margin-bottom: 6px;
-  }
-
-  .dontthave-cc {
-    margin-top: 10px;
-  }
+    .dontthave-cc {
+      margin-top: 10px;
+    }
 
 }
 
@@ -439,13 +439,13 @@
     line-height: 1;
   }
 
-  .image-container {
-    top: 30%;
-  }
+.image-container {
+  top: 35%;
+}
 
-  .image-container img {
-    width: 400px;
-  }
+.image-container img {
+  width: 500px;
+}
 
 }
 
@@ -460,9 +460,9 @@
     font-size: 33px;
   }
 
-  .image-container img {
-    width: 350px;
-  }
+.image-container img {
+width: 450px;
+}
 
 }
 
@@ -525,9 +525,9 @@
     top: 40%;
   }
 
-  .image-container img {
-    width: 350px;
-  }
+.image-container img {
+  width: 450px;
+}
 
 }
 
@@ -540,11 +540,11 @@
   .blue-title {
     margin-bottom: 220px;
     font-size: 28px;
-  }
-
-  .image-container img {
-    width: 350px;
-  }
+    }
+    
+    .image-container img {
+    width: 450px;
+    }
 }
 
 @media only screen and (min-width: 770px) and (max-width: 859px) {
@@ -562,9 +562,13 @@
     font-size: 13px;
   }
 
-  .image-container img {
-    width: 300px;
-  }
+    .blue-para {
+      font-size: 13px;
+    }
+    
+    .image-container img {
+    width: 450px;
+    }
 }
 
 /* Styles for screens smaller than 768px */
@@ -625,9 +629,9 @@
     top: 40%;
   }
 
-  .image-container img {
-    width: 300px;
-  }
+.image-container img {
+  width: 420px;
+}
 
 }
 
@@ -653,7 +657,7 @@
   }
 
   .image-container img {
-    width: 250px;
+    width: 360px;
   }
 
 }
@@ -664,9 +668,10 @@
     display: none;
   }
 
-  .login-form-container {
-    margin: auto;
-  }
+.login-form-container {
+  margin: auto;
+  margin-top: 50px;
+}
 
 }
 
@@ -677,11 +682,12 @@
     /* Hide the .blue-square element */
   }
 
-  .login-form-container {
-    margin: auto;
-    width: 350px;
-    height: auto;
-  }
+.login-form-container {
+  margin: auto;
+  width: 350px;
+  height: auto;
+  margin-top: 30px;
+}
 
 }
 
@@ -712,12 +718,12 @@
 
 }
 
-/*Ipad Pro*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (min-device-height: 1024px) and (max-device-height: 1024px) {
+/*Ipad Mini*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (min-device-height: 1024px) and (max-device-height: 1024px){
   .login-form-container {
     width: 380px;
-    margin-top: 20px;
-  }
+    margin-top: 100px;
+}
 
   .blue-square {
     height: 900px;
@@ -788,14 +794,13 @@
     font-size: 18px;
   }
 
-  .image-container {
-    top: 25%;
-    left: 75%;
-  }
-
-  .image-container img {
-    width: 350px;
-  }
+.image-container {
+  top: 27%;
+  left: 75%;
+}
+.image-container img {
+  width: 390px;
+}
 
 }
 
@@ -803,8 +808,8 @@
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) {
   .login-form-container {
     width: 500px;
-    margin-top: 90px;
-  }
+    margin-top: 170px;
+}
 
   .blue-square {
     height: 1100px;
@@ -859,9 +864,13 @@
     font-size: 20px;
   }
 
-  .or-login-p {
-    font-size: 20px;
-  }
+.image-container {
+  top: 30%;
+  left: 79%;
+}
+.image-container img {
+  width: 500px;
+}
 
   .image-container {
     top: 25%;
@@ -898,12 +907,14 @@
 @media only screen and (min-device-width: 820px) and (max-device-width: 820px) and (min-device-height: 1180px) and (max-device-height: 1180px) {
   .login-form-container {
     width: 400px;
-    margin-top: 90px;
-  }
+    margin-top: 150px;
+    margin-left: 30px;
+}
 
-  .blue-square {
-    height: 1000px;
-  }
+.blue-square {
+  height: 1000px;
+  width: 360px;
+}
 
   .login-title {
     font-size: 45px;
@@ -936,13 +947,9 @@
     margin-top: 30px;
   }
 
-  .btn-Login {
-    margin-bottom: 15px;
-    padding: 11px;
-    font-size: 20px;
-  }
-
-
+.or-login-p {
+  font-size: medium;
+}
 
   .or-login-p {
     font-size: medium;
@@ -951,38 +958,37 @@
   .blue-title {
     margin-bottom: 635px;
     margin-right: 30px;
-    font-size: 21px;
+    font-size: 23px;
     line-height: 1.4;
   }
 
-  .blue-para {
-    font-size: 13.5px;
+.blue-para {
+    font-size: 15.5px;
     margin-bottom: 550px;
     margin-right: 30px;
-    line-height: 1.3;
-  }
+    line-height: 1.4;
+}
 
-  .learn-more-btn {
-    margin-right: 100px;
+.learn-more-btn {
+    margin-right: 120px;
     margin-bottom: 480px;
     width: 120px;
     height: 45px;
     font-size: 18px;
   }
 
-  .image-container {
-    top: 25%;
-    left: 75%;
-  }
-
-  .image-container img {
-    width: 350px;
-  }
+.image-container {
+  top: 28%;
+  left: 79%;
+}
+.image-container img {
+  width: 460px;
+}
 
 }
 
 /* Example of a media query targeting screens height  */
-@media only screen and (max-height: 792px) {
+@media only screen and (max-height: 800px){
 
   .login-form-container {
     width: 400px;
@@ -1019,16 +1025,16 @@
 
 }
 
-@media only screen and (max-height: 740px) {
+@media only screen and (max-height: 758px){
   .login-form-container {
     width: 350px;
   }
 
-  .welcome-b-title {
-    font-size: 13px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+.welcome-b-title {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
 
   .btn-Login {
     margin-top: 10px;
@@ -1053,13 +1059,23 @@
     margin-top: 1px;
   }
 
-  .blue-square {
-    height: 570px;
-  }
+.blue-square {
+  height: 570px;
+}
+.image-container img {
+  width: 390px;
+}
+}
 
-  .image-container img {
-    width: 290px;
-  }
+@media only screen and (max-height: 702px){
+  .login-form-container {
+    width: 350px;
+}
+
+.main-logo {
+  margin-bottom: 10px;
+}
+
 }
 
 @media only screen and (max-height: 680px) {
@@ -1068,11 +1084,15 @@
     width: 280px;
   }
 
-  .welcome-b-title {
-    font-size: 12px;
-    padding-top: 3px;
-    padding-bottom: 5px;
-  }
+.main-logo-l1{
+  width: 90%;
+}
+
+.welcome-b-title {
+  font-size: 12px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+ }
 
   .btn-Login {
     margin-top: 10px;
@@ -1139,14 +1159,13 @@
     margin-bottom: 100px;
   }
 
-  .image-container img {
-    width: 300px;
-  }
+.image-container img {
+  width: 390px;
+}
 
-  .image-container {
-    top: 35%;
-    left: 65%;
-  }
+.image-container {
+  top: 35%;
+}
 
 }
 
@@ -1216,18 +1235,18 @@
     /* font-size: 14px; */
   }
 
-  .image-container img {
-    width: 280px;
-  }
+.image-container img {
+  width: 380px;
+}
 
   .image-container {
     top: 35%;
     left: 75%;
   }
 
-  .main-logo-l1 {
-    width: 20%;
-  }
+.main-logo-l1{
+  width: 90%;
+}
 
   .learn-more-btn {
     width: 90px;
@@ -1236,28 +1255,63 @@
   }
 }
 
-@media only screen and (max-height: 563px) {
-  .main-logo-l1 {
-    width: 15%;
-  }
+@media only screen and (max-height: 702px){
+  .login-form-container {
+margin-top: 15px;
+}
+
+.main-logo {
+  margin-bottom: 10px;
+}
+
+
+
+}
+@media only screen and (max-height: 563px){
 
   .blue-square {
     height: 450px;
   }
 
-
-}
-
-@media only screen and (max-height: 537px) {
-  .main-logo-l1 {
-    width: 10%;
+  .image-container img {
+    width: 340px;
   }
 
 
+}
+
+@media only screen and (max-height: 537px){
+  .main-logo-l1{
+    width: 80%;
+  }
+
+  .image-container img {
+    width: 340px;
+  }
 
 }
 
-@media only screen and (max-height: 485px) {
+@media only screen and (max-height: 518px){
+  .main-logo-l1{
+    width: 60%;
+  }
+  .main-logo {
+    margin-bottom: 3px;
+  }
+
+  .welcome-b-title {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.form-check-input{
+  margin-top: 3px;
+}
+
+
+}
+
+@media only screen and (max-height: 495px){
 
   .login-form-container {
     width: 230px;
@@ -1321,9 +1375,9 @@
     margin-bottom: 100px;
   }
 
-  .image-container img {
-    width: 220px;
-  }
+.image-container img {
+  width: 320px;
+}
 
   .learn-more-btn {
     width: 90px;
@@ -1378,9 +1432,9 @@
     margin-bottom: 100px;
   }
 
-  .image-container img {
-    width: 190px;
-  }
+.image-container img {
+  width: 240px;
+}
 
   .learn-more-btn {
     width: 90px;
