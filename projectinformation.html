@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Information</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/projectinformation.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+    
+  <header>
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="brand-logo">
+          <img src="assets/Logo.png" alt="Company Logo" class="byldinglogo">
+        </div>
+        <ul class="nav-menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link" id="menu-link">Project Tools</a>
+            <i class="fa fa-angle-down" aria-hidden="true" id="fa fa-angle-down"></i>
+            <div class="dropdown">
+              <div class="dropdown-section">
+                <a href="#" class="main-topic">Core Tools</a>
+                <div class="subtopics">
+                  <a href="#">Alters</a>
+                  <a href="#">Company</a>
+                  <a href="#">Sub Company</a>
+                </div>
+              </div>
+              <div class="dropdown-section">
+                <a href="#" class="main-topic">Projects</a>
+                <div class="subtopics">
+                  <a href="#">Project A</a>
+                  <a href="#">Project B</a>
+                </div>
+              </div>
+              <div class="dropdown-section">
+                <a href="#" class="main-topic">User Management</a>
+                <div class="subtopics">
+                  <a href="#">User</a>
+                  <a href="#">Company Details</a>
+                  <a href="#">User Time Off</a>
+                  <a href="#">User Role Setting</a>
+                </div>
+              </div>
+              <div class="dropdown-section">
+                <a href="#" class="main-topic">Master</a>
+                <div class="subtopics">
+                  <a href="#">Country</a>
+                  <a href="#">State</a>
+                  <a href="#">City</a>
+                  <a href="#">Leave Category</a>
+                  <a href="#">Job Site State</a>
+                  <a href="#">Alert Type</a>
+                  <a href="#">Bid Type</a>
+                  <a href="#">Project Type</a>
+                  <a href="#">Lead Source</a>
+                  <a href="#">Change Order Reason</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="nav-search">
+          <i class="fas fa-search"></i>
+          <input type="search" id="search" placeholder="Search">
+        </div>
+        <div class="nav-items">
+          <img src="images/image-removebg-preview (6) 1.png" alt="USA Flag" class="flag">
+          <i class="fas fa-moon"></i>
+          <img src="images/image 11.png" alt="User" class="user">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Second section (Submenu) -->
+  <div class="submenu">
+    <div class="submenu-container">
+      <!-- PROJECTS title -->
+      <div class="submenu-title">
+        <span>PROJECT 001</span>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="containers mt-3 ee">
+        <h2 id="titlemain">Project Information</h2>
+    
+        
+
+        <div class="maincontaininputs" id="maincontaininputs">
+
+            <form id="companyForm">
+
+                <div class="row">
+                  <!-- Left Column -->
+                  <div class="col-md-6">
+                    <!-- Job Number -->
+                    <div class="mb-3">
+                      <label for="JobNumber" class="form-label">Job Number</label>
+                      <input type="text" class="form-control" id="JobNumber" name="JobNumber" required>
+                    </div>
+              
+                    <!-- Project Type -->
+                    <div class="mb-3">
+                      <label for="ProjectType" class="form-label">Project Type</label>
+                      <input type="text" class="form-control" id="ProjectType" name="ProjectType" required>
+                    </div>
+              
+                    <!-- Contact Person  -->
+                    <div class="mb-3">
+                      <label for="ContactPerson" class="form-label">Contact Person</label>
+                      <input type="text" class="form-control" id="ContactPerson" name="ContactPerson" required>
+                    </div>
+              
+                    <!-- Lead Source  -->
+                    <div class="mb-3">
+                      <label for="LeadSource" class="form-label">Lead Source</label>
+                      <input type="text" class="form-control" id="LeadSource" name="LeadSource" required>
+                    </div>
+              
+                    <!-- Project Participants -->
+                    <div class="mb-3">
+                      <label for="ProjectParticipants" class="form-label">Project Participants</label>
+                      <input type="text" class="form-control" id="ProjectParticipants" name="ProjectParticipants" required>
+                    </div>
+              
+                    <!-- Job Site -->
+                    <div class="mb-3">
+                      <label for="JobSite" class="form-label">Job Site</label>
+                      <input type="text" class="form-control" id="BidType" name="BidType" required>
+                    </div>
+                  </div>
+
+              
+                  <!-- Right Column -->
+                  <div class="col-md-6 colright">
+                    <!-- Project Name  -->
+                    <div class="mb-3">
+                      <label for="ProjectName" class="form-label">Project Name</label>
+                      <input type="text" class="form-control" id="ProjectName" name="ProjectName" required>
+                    </div>
+              
+                    <!-- Owner -->
+                    <div class="mb-3">
+                      <label for="Owner" class="form-label">Owner</label>
+                      <input type="text" class="form-control" id="Owner" name="Owner" required>
+                    </div>
+              
+                    <!-- Bid Type -->
+                    <div class="mb-3">
+                      <label for="BidType" class="form-label">Bid Type</label>
+                      <input type="text" class="form-control" id="BidType" name="BidType">
+                    </div>
+              
+                    <!-- Budget Retainage Rounding -->
+                    <div class="mb-3">
+                      <label for="BudgetRetainageRounding" class="form-label">Budget Retainage Rounding</label>
+                      <input type="text" class="form-control" id="BudgetRetainageRounding" name="BudgetRetainageRounding">
+                    </div>
+              
+                    <!-- Project Stage -->
+                    <div class="mb-3">
+                      <label for="ProjectStage" class="form-label">Project Stage</label>
+                      <input type="text" class="form-control" id="ProjectStage" name="ProjectStage" required>
+                    </div>
+                  </div>
+                </div>
+              
+              </form>
+              
+          
+        </div>
+
+        <!--  -->
+        <div class="d-flex justify-content-end mt-3">
+            <button type="button" class="btn btn-secondary me-2" id="btnCancel">Cancel</button>
+            <button type="submit" class="btn btn-primary" id="btnEdit">Edit</button>
+          </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
