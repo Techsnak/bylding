@@ -5,10 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="css/projectsNew.css">
+  <link rel="stylesheet" href="css/navbar.css">
 </head>
 
 <body>
@@ -85,76 +84,25 @@
       <div class="submenu-title">
         <span>PROJECTS</span>
       </div>
+
       <ul class="submenu-list">
-        <li class="menu-item">
-          <a href="#" class="projects-link" id="projects-link">Financial Views</a>
-          <i class="fa fa-angle-down-2" aria-hidden="true" id="fa fa-angle-down-2"></i>
-          <div class="dropdown bb">
-            <div class="dropdown-section">
-              <a href="#" class="main-topic">Financial Views</a>
-              <div class="subtopics">
-                <a href="#">Prime Contract</a>
-                <a href="#">Prime Contract SOV</a>
-                <a href="#">Schedule</a>
-                <a href="#">Sub Contracts</a>
-                <a href="#">Prime Contract</a>
-                <a href="#">Prime Contract SOV</a>
-                <a href="#">Schedule</a>
-                <a href="#">Sub Contracts</a>
-              </div>
-            </div>
-          </div>
-        </li>
+        <li><a href="projectsNew.html" class="projects-link">Projects</a></li>
+        <li><a href="#" class="jobs-link">Job Sites</a></li>
       </ul>
+      <div class="submenu-actions">
+        <button onclick="myFunction()" class="dropbtn">Export<i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">PDF</a>
+          <a href="#">CSV</a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="card-container">
-    <div class="card-max-width" style="display: flex; padding: 50px; flex-direction: column;">
-      <table class="table table-bordered" style="border-radius: 20px;">
-        <thead style="background-color: #F8F8F8;">
-          <tr>
-            <th>Job Number</th>
-            <th>Project Name</th>
-            <th>Project Type</th>
-            <th>Client/Owner</th>
-            <th>Contact Person</th>
-            <th>Lead Source</th>
-            <th>Budget Retainage Rounding</th>
-            <th>Project Participants</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>24-002</td>
-            <td>Project 0001</td>
-            <td>Test</td> 
-            <td>Data 6</td>
-            <td>Data 7</td>
-            <td>Data 8</td>
-            <td>Data 9</td>
-            <td>Data 10</td>
-          </tr>
-          <tr>
-            <td>Data 6</td>
-            <td>Data 7</td>
-            <td>Data 8</td>
-            <td>Data 9</td>
-            <td>Data 10</td>
-            <td>Data 8</td>
-            <td>Data 9</td>
-            <td>Data 10</td>
-          </tr>
-          <!-- Add more rows with dummy data as needed -->
-        </tbody>
-      </table>
-      <div class="project-view">
-        <button class="edit-btn" type="submit">Edit Project</button>
-        <button class="edit-btn" type="submit">Cancel</button>
-      </div>
-  </div>
-  </div>
 
+
+  
   <script src="js/scripts.js"></script>
 
   <script>

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+   --main-color:#0000A3;
+   --blue-garatto: #0067B3;
+   --aquamarine: #40B0DF;
+   --light-black: #313131;
+   --yellow: #F68802;
+   --yellow2: #FFD530;
+   --white: #FFFFFF;
+   --lightpink: #F7F6FE;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+#btnCancel {
+  width: 150px;
+  height: 50px;
+  border: 1px solid var(--main-color);
+  background-color: transparent;
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+#btnEdit {
+  width: 150px;
+  height: 50px;
+  background-color: var(--main-color);
+  border: none;
+}
+
+.form-control {
+  height: 50px;
+  max-width: 700px;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+
+#maincontaininputs {
+  background-color: var(--lightpink);
+  padding: 15px 120px 15px 120px; /* top right bottom left */
+  border-radius: 15px;
+}
+
+.ee {
+margin: 0px 50px 0px 50px;
+}
+
+
+/* .colright .mb-3 {
+  margin-left: 80px; 
+} */
+
+#titlemain {
+  font-size: larger;
+}
