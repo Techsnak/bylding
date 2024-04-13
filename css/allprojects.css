@@ -1751,99 +1751,18 @@ body {
       .menu-icons ul {
         justify-content: flex-end; /* Align menu icons to the right */
       }
-    }
-
-  
+  }
   
   /* Small desktops and laptops */
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  
-    /* Reduce size and margin of the search bar */
-    .nav-search {
-        margin-left: 20px; /* Adjust the left margin to fit the screen */
-      }
-    
-      .nav-search input[type="search"] {
-        width: 180px; /* Reduce the width of the search input */
-      }
-    
-      /* Adjust the size of icons and ensure they fit on the screen */
-      .nav-items img.flag,
-      .nav-items i.fas.fa-moon,
-      .nav-items img.user {
-        width: 30px; /* Reduce the icon size */
-        height: 30px; /* Reduce the icon size */
-        margin-right: 10px; /* Reduce the space between icons */
-      }
-    
-      /* Adjust user-dropdown button */
-      .user-dropdown .user-button {
-        width: 30px; /* Match the size with the icon adjustments above */
-        height: 30px; /* Match the size with the icon adjustments above */
-      }
-    
-      /* Adjust the layout of nav items to ensure proper spacing */
-      .nav-items {
-        display: flex;
-        justify-content: flex-end; /* Align items to the end */
-        align-items: center; /* Center items vertically */
-        padding-right: 20px; /* Add padding to the right */
-      }
-    
-      /* Additional responsive adjustments for cards */
-      .card-container .card {
-        flex-basis: calc(50% - 20px);
-        max-width: calc(50% - 20px);
-      }
-    
-    
+
       .menu-icons ul {
         justify-content: flex-end; /* Align menu icons to the right */
       }
   }
-  
-  
+    
   /* Large screens */
   @media only screen and (min-width: 1281px) {
-  
-    /* Reduce size and margin of the search bar */
-    .nav-search {
-        margin-left: 20px; /* Adjust the left margin to fit the screen */
-      }
-    
-      .nav-search input[type="search"] {
-        width: 180px; /* Reduce the width of the search input */
-      }
-    
-      /* Adjust the size of icons and ensure they fit on the screen */
-      .nav-items img.flag,
-      .nav-items i.fas.fa-moon,
-      .nav-items img.user {
-        width: 30px; /* Reduce the icon size */
-        height: 30px; /* Reduce the icon size */
-        margin-right: 10px; /* Reduce the space between icons */
-      }
-    
-      /* Adjust user-dropdown button */
-      .user-dropdown .user-button {
-        width: 30px; /* Match the size with the icon adjustments above */
-        height: 30px; /* Match the size with the icon adjustments above */
-      }
-    
-      /* Adjust the layout of nav items to ensure proper spacing */
-      .nav-items {
-        display: flex;
-        justify-content: flex-end; /* Align items to the end */
-        align-items: center; /* Center items vertically */
-        padding-right: 20px; /* Add padding to the right */
-      }
-    
-      /* Additional responsive adjustments for cards */
-      .card-container .card {
-        flex-basis: calc(50% - 20px);
-        max-width: calc(50% - 20px);
-      }
-    
     
       .menu-icons ul {
         justify-content: flex-end; /* Align menu icons to the right */
