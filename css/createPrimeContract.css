@@ -19,13 +19,15 @@ body {
     padding: 0 ; 
 }
 
+.header{
+    height: 60px !important;
+}
+
+
 body .navbar {
     /* overflow: hidden; */
     background-color: #f9f9f9;
     font-family: 'Poppins', sans-serif;
-}
-
-.navbar {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -43,9 +45,18 @@ body .navbar {
 .brand-logo {
     display: inline-block;
     margin-left: 10px;
-    margin-bottom: 18px;
+    margin-bottom: 5px; 
     margin-right: 25px;
+    margin-top: 5px;
     vertical-align: middle;
+    height: auto;
+    align-items: center !important;
+}
+
+.brand-logo img{
+    height: 60px;
+    vertical-align: middle;
+    margin-top: -5px; 
 }
 
 .dropdown {
@@ -141,7 +152,7 @@ body .navbar {
 .nav-search {
     position: relative;
     margin-right: 50px;
-    margin-left: 480px;
+    margin-left: 560px;
 }
 
 .nav-search input {
@@ -425,12 +436,16 @@ body .navbar {
     color: #333;
 }
 
+.table-container {
+    padding-right: 20px; /* Adjust this value to the amount of space you want */
+}
+
 .table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
-    border: 1px solid #0000001C; 
-  }
+    border: 1px solid #0000001C;
+}
   
   .table thead tr {
     background-color: #FFFFFF; 
