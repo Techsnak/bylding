@@ -14,17 +14,20 @@
     box-sizing: border-box;
 }
 
+
 body {
-    margin: 0;
+    padding: 0 ; 
 }
 
-.navbar {
+.header{
+    height: 60px !important;
+}
+
+
+body .navbar {
     /* overflow: hidden; */
     background-color: #f9f9f9;
     font-family: 'Poppins', sans-serif;
-}
-
-.navbar {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -42,9 +45,18 @@ body {
 .brand-logo {
     display: inline-block;
     margin-left: 10px;
-    margin-bottom: 18px;
+    margin-bottom: 5px; 
     margin-right: 25px;
+    margin-top: 5px;
     vertical-align: middle;
+    height: auto;
+    align-items: center !important;
+}
+
+.brand-logo img{
+    height: 60px;
+    vertical-align: middle;
+    margin-top: -5px; 
 }
 
 .dropdown {
@@ -135,11 +147,12 @@ body {
     }
 }
 
+
 /* Search Bar */
 .nav-search {
     position: relative;
     margin-right: 50px;
-    margin-left: 450px;
+    margin-left: 540px;
 }
 
 .nav-search input {
@@ -208,13 +221,9 @@ body {
 
 .user-dropdown img {
     display: block;
-    /* Ensure it's not inline which could cause horizontal alignment */
     width: auto;
-    /* Adjust width as needed */
     height: auto;
-    /* Adjust height as needed */
     margin: auto;
-    /* Center it if that's desired */
 
 }
 
@@ -227,7 +236,6 @@ body {
     display: none;
     position: absolute;
     background-color: #ffffff;
-    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
     z-index: 1 !important;
     right: 0;
     top: 100%;
