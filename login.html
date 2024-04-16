@@ -67,7 +67,7 @@
     </div>
   </div>
 
-<!--slider and dots-->
+  <!--slider and dots-->
   <div class="slider-container">
     <div class="slider">
       <div class="slide"> <!-- First Slide Content --> </div>
@@ -75,7 +75,7 @@
       <!-- Add more slide elements as needed -->
     </div>
     <div class="dots">
-      <span class="dot"></span>
+      <span class="dot active"></span>
       <span class="dot"></span>
       <span class="dot"></span>
       <span class="dot"></span>
@@ -84,19 +84,19 @@
   </div>
 
   <div class="blue-square">
-    <a href="projects.html"> <button class="learn-more-btn">Learn More</button></a>
-    <p class="blue-title">A growing force within the<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;construction
-      industry</p>
-    <p class="blue-para">Our committed approach is built on the<br> &nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; premise that collaboration and <br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; communication are key
+    <a href="#"> <button class="learn-more-btn">Learn More</button></a>
+    <p class="blue-title">A growing force within the<br>construction industry</p>
+    <p class="blue-para">Our committed approach is built on the<br>premise that collaboration and <br>communication are key
       in all
     </p>
     <div class="image-container">
-      <img src="assets/login-bluesq-img.png" alt="Description of Image 1" class="active">
+      <img src="assets/slider/slider4.png" alt="Description of Image 1" class="active">
+      <img src="assets/slider/slider2.png" alt="Description of Image 1">
+      <img src="assets/slider/slider3.png" alt="Description of Image 1">
+      <img src="assets/slider/slider5.png" alt="Description of Image 1">
+      
     </div>
-  </div>
-
+  </div> 
 </body>
 
 <!-- <script src="js/slider.js"></script> -->
@@ -105,13 +105,20 @@
   const slider = document.querySelector('.slider');
   const slides = document.querySelectorAll('.slide');
   const dots = document.querySelectorAll('.dot');
+  const images = document.querySelectorAll(".image-container img");
+
   let currentIndex = 0;
+  let index = 0;
 
   function showSlide(index) {
     slider.style.transform = `translateX(-${index * 100}%)`;
     dots.forEach((dot, i) => {
       dot.classList.toggle('active', i === index);
     });
+    
+    images.forEach(img => img.classList.remove("active"));
+    images[currentIndex].classList.add("active");
+    currentIndex = (currentIndex + 1) % images.length;
   }
 
   dots.forEach((dot, i) => {
@@ -120,6 +127,20 @@
       showSlide(currentIndex);
     });
   });
+
+  function showImage() {
+      images.forEach(img => img.classList.remove("active"));
+      images[index].classList.add("active");
+      index = (index + 1) % images.length;
+
+      slider.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+  }
+
+  // setInterval(showImage, 5000); // Rotate every 3 seconds
+
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
