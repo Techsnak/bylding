@@ -37,3 +37,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+// user dropdown
+// JavaScript
+function toggleProfileDropdown() {
+    var dropdown = document.getElementById("profileDropdown");
+    dropdown.classList.toggle("show");
+  }
+  
+  // Close dropdown when clicked outside
+  window.onclick = function(event) {
+    if (!event.target.matches('.user')) {
+      var dropdown = document.getElementById("profileDropdown");
+      if (dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
+      }
+    }
+  }
+
