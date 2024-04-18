@@ -1,130 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nav bar </title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
-    <link rel="stylesheet" href="css/navbar.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+
+
+
 </head>
+
 <body>
-    
-  <header>
-    <nav id="navbar">
-      <div class="nav-container">
-        <div class="brand-logo">
-          <img src="assets/Logo.png" alt="Company Logo" class="byldinglogo">
-        </div>
-        <ul class="nav-menu">
-          <li class="menu-item">
-            <a href="#" class="menu-link" id="menu-link">Company Tools</a>
-            <i class="fa fa-angle-down" aria-hidden="true" id="fa fa-angle-down"></i>
-            <div class="dropdown">
-              <div class="dropdown-section">
-                <a href="#" class="main-topic">Core Tools</a>
-                <div class="subtopics">
-                  <a href="#">Alters</a>
-                  <a href="#">Company</a>
-                  <a href="#">Sub Company</a>
-                </div>
-              </div>
-              <div class="dropdown-section">
-                <a href="#" class="main-topic">Projects</a>
-                <div class="subtopics">
-                  <a href="#">Project A</a>
-                  <a href="#">Project B</a>
-                </div>
-              </div>
-              <div class="dropdown-section">
-                <a href="#" class="main-topic">User Management</a>
-                <div class="subtopics">
-                  <a href="#">User</a>
-                  <a href="#">Company Details</a>
-                  <a href="#">User Time Off</a>
-                  <a href="#">User Role Setting</a>
-                </div>
-              </div>
-              <div class="dropdown-section">
-                <a href="#" class="main-topic">Master</a>
-                <div class="subtopics">
-                  <a href="#">Country</a>
-                  <a href="#">State</a>
-                  <a href="#">City</a>
-                  <a href="#">Leave Category</a>
-                  <a href="#">Job Site State</a>
-                  <a href="#">Alert Type</a>
-                  <a href="#">Bid Type</a>
-                  <a href="#">Project Type</a>
-                  <a href="#">Lead Source</a>
-                  <a href="#">Change Order Reason</a>
-                </div>
-              </div>
+    <header>
+        <div class="navbar">
+            <div class="brand-logo">
+                <img src="assets/Logo.png" alt="Company Logo" class="byldinglogo" />
             </div>
-          </li>
-        </ul>
-        <div class="nav-search">
-          <i class="fas fa-search"></i>
-          <input type="search" id="search" placeholder="Search">
+            <div class="dropdown">
+                <button class="megadropbtn">
+                    Company Tools
+                    <i class="fa fa-angle-down"></i>
+                </button>
+                <div class="mega-dropdown-content">
+                    <div class="row">
+                        <div class="column">
+                            <h3>Core Tools</h3>
+                            <a href="#">Alters</a>
+                            <a href="#">Company</a>
+                            <a href="#">Sub Company</a>
+                        </div>
+                        <div class="column">
+                            <h3>Projects</h3>
+                            <a href="#">Project A</a>
+                            <a href="#">Project B</a>
+                        </div>
+                        <div class="column">
+                            <h3>User Management</h3>
+                            <a href="#">User</a>
+                            <a href="#">Company Details</a>
+                            <a href="#">User Time Off</a>
+                            <a href="#">User Role Setting</a>
+                        </div>
+                        <div class="column">
+                            <h3>Master</h3>
+                            <a href="#">Country</a>
+                            <a href="#">State</a>
+                            <a href="#">City</a>
+                            <a href="#">Leave Category</a>
+                            <a href="#">Job Site State</a>
+                            <a href="#">Alert Type</a>
+                            <a href="#">Bid Type</a>
+                            <a href="#">Project Type</a>
+                            <a href="#">Lead Source</a>
+                            <a href="#">Change Order Reason</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add the search bar next to the dropdown -->
+            <div class="nav-search">
+                <i class="fas fa-search"></i>
+                <input type="search" id="search" placeholder="Search" />
+            </div>
+
+            <!-- Add the icons and user profile dropdown -->
+            <div class="nav-items">
+                <img src="images/image-removebg-preview (6) 1.png" alt="USA Flag" class="flag" />
+                <i class="fas fa-moon"></i>
+                <div class="user-dropdown">
+                    <button class="user-button" onclick="toggleDropdown('userDropdownMenu')">
+                        <img src="images/image 11.png" alt="User" class="user" />
+                    </button>
+                    <div class="dropdown-content" id="userDropdownMenu">
+                        <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+                        <a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Log Out</a>
+                    </div>
+                </div>
+            </div>
+            
+    </header>
+
+    <!-- Second section (Submenu) -->
+    <div class="submenu">
+        <div class="submenu-container">
+            <!-- PROJECTS title -->
+            <div class="submenu-title">
+                <span>PROJECTS</span>
+            </div>
+
+            <ul class="submenu-list">
+                <li><a href="projectsNew.html" class="projects-link">Projects</a></li>
+                <li><a href="#" class="jobs-link">Job Sites</a></li>
+            </ul>
+            <div class="submenu-actions">
+                <button onclick="toggleDropdown('myDropdown')" class="dropbtn">Export<i class="fa fa-angle-down"
+                        aria-hidden="true"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">PDF</a>
+                    <a href="#">CSV</a>
+                </div>
+            </div>
         </div>
-        <div class="nav-items">
-          <img src="images/image-removebg-preview (6) 1.png" alt="USA Flag" class="flag">
-          <i class="fas fa-moon"></i>
-          <!-- User Profile Dropdown -->
-          <img src="images/image 11.png" alt="User" class="user" onclick="toggleProfileDropdown()">
-          <div id="profileDropdown" class="user-dropdown">
-          <a href="#"><i class="fas fa-circle-user"></i>
-          Profile</a>
-          <a href="#"><i class="fas fa-arrow-right"></i><i class="fas fa-bracket-right"></i>Logout</a>
-        </div>
-        <!-- end of User Profile Dropdown -->
-
-
-
-        </div>
-      </div>
-    </nav>
-  </header>
+    </div>
 
 
 
 
-    <!-- dropdown js -->
+
+
+  
+
+    <script src="js/scripts.js"></script>
+
     <script>
-      // Get the export button and menu elements
-const exportButton = document.querySelector('.export-button');
-const exportMenu = document.querySelector('.export-menu');
-
-// Toggle the export menu when the button is clicked
-exportButton.addEventListener('click', () => {
-    const exportDropdown = exportButton.parentNode;
-    exportDropdown.classList.toggle('show');
-});
-
-// Close the export menu when clicking outside the dropdown
-window.addEventListener('click', (event) => {
-    if (!event.target.closest('.export-dropdown')) {
-        const exportDropdowns = document.querySelectorAll('.export-dropdown');
-        exportDropdowns.forEach((dropdown) => {
-            dropdown.classList.remove('show');
-        });
-    }
-});
-
-// Handle exporting the file
-function exportFile(fileType) {
-    if (fileType === 'psd') {
-        console.log('Exporting as PSD');
-        // Implement your export to PSD functionality here
-    } else if (fileType === 'csv') {
-        console.log('Exporting as CSV');
-        // Implement your export to CSV functionality here
+// Function to toggle the dropdown visibility
+function toggleDropdown(id) {
+    var dropdown = document.getElementById(id);
+    if (dropdown) {
+        dropdown.classList.toggle('show');
     }
 }
 
+// Event listener to handle clicks outside of the dropdown
+window.onclick = function(event) {
+    // Check if the click is not on the user button or its children
+    if (!event.target.closest('.user-button')) {
+        var dropdowns = document.querySelectorAll('.dropdown-content.show');
+        dropdowns.forEach(function(dropdown) {
+            dropdown.classList.remove('show');
+        });
+    }
+};
+
     </script>
-    <script src="js/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/bootstrap.bundle.min.js"></script>
-    </body>
-    </html>
+</body>
+</html>

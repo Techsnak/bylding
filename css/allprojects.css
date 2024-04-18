@@ -55,9 +55,8 @@ body .navbar {
 }
 
 .brand-logo img{
-    height: 60px;
+    height: 55px;
     vertical-align: middle;
-    margin-top: -5px; 
 }
 
 .dropdown {
@@ -282,10 +281,11 @@ body .navbar {
     align-items: center;
     width: 100%;
     padding: 0 20px;
+    height: 55px;
 }
 
 .submenu-title span {
-    font-size: 24px;
+    font-size: 20px;
     color: #f8f8f8;
     font-weight: bold;
     padding-right: 30px;
@@ -324,7 +324,7 @@ body .navbar {
 }
 
 .submenu-actions button {
-    padding: 10px 20px;
+    padding: 5px 10px;
     background-color: #0000A3;
     border: 1px solid #ffffff;
     border-radius: 4px;
@@ -409,7 +409,7 @@ body .navbar {
     border-radius: 5px;
     margin-left: 20px;
     margin-top: 25px;
-    padding: 10px 20px;
+    padding: 11.4px 20px;
     font-size: 16px;
     cursor: pointer;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -532,7 +532,7 @@ body .navbar {
 .card-location {
     font-size: 18px;
     color: #333;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .card-status {
@@ -1381,10 +1381,7 @@ body .navbar {
   
   /* Large Tablets and Small Laptops */
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  header {
-    /* Adjustments for header height if needed */
-    height: 90px; /* You can adjust this value as per your design */
-  }
+
     
   .nav-container {
     /* Adjust spacing and alignment */

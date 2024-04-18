@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 :root {
-   --main-color:#0000A3;
-   --blue-garatto: #0067B3;
-   --aquamarine: #40B0DF;
-   --light-black: #313131;
-   --yellow: #F68802;
-   --yellow2: #FFD530;
-   --white: #FFFFFF;
-   --lightpink: #F7F6FE;
+  --main-color:#0000A3;
+  --blue-garatto: #0067B3;
+  --aquamarine: #40B0DF;
+  --light-black: #313131;
+  --yellow: #F68802;
+  --yellow2: #FFD530;
+  --white: #FFFFFF;
+  --lightpink: #F7F6FE;
 }
 
 * {
@@ -21,246 +21,175 @@
     text-decoration: none;
 }
 
-
-/*nav bar*/
-
-header {
-  background: #fafafa;
-  color: white;
-  height: 80px;
-}
-
-/* drop-down */
-.navbar {
-  position: relative;
-  width: 100%;
-  max-width: 100vw;
-  margin: 0 auto;
-  padding-left: 0;
-  padding-right: 0;
+* {
+    box-sizing: border-box;
 }
 
 
-.nav-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  width: 100%;
+body {
+    padding: 0 ; 
 }
 
-.menu-item {
-  position: relative;
-  display: inline-block;
+.header{
+    height: 60px !important;
 }
 
 
-
-/*navbar chenged*/
-#menu-link {
-  color: black;
-}
-
-.fa-moon {
-  color: #bdbdbd;
-}
-
-
-/**/
-.menu-link {
-  text-decoration: none;
-  padding: 10px 15px;
+body .navbar {
+      /* overflow: hidden; */
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.menu-item {
-  display: inline-flex;
-}
-
-.fa-angle-down {
-  color: #000000;
-  padding-left: 10px;
-  align-self: center;
-  font-size: 1rem;
-}
-
-.fa-angle-down-2 {
-  color: #ffffff;
-  padding-left: 10px;
-  align-self: center;
-  font-size: 1rem;
-}
-
-.menu-item.active .fa-angle-down {
-  transform: rotate(180deg);
-}
-
-.menu-item.active .fa-angle-down-2 {
-  transform: rotate(180deg);
-}
-
-/* Mega menu dropdown */
-.dropdown {
-  display: none;
-  position: absolute;
-  background-color: var(--blue-garatto);
-  width: 100vw;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  top: 140%;
-  padding: 0;
-  margin: 0;
-  margin-left: -293px;
-}
-
-.bb{
-  margin-left: 100px;
-}
-
-@media screen and (max-width: 100vw) {
-  .dropdown {
-    width: 100vw;
-    box-sizing: border-box;
-  }
-
-  .bb{
-    width: 85vw;
-  }
-}
-
-@media screen and (max-width: 100vw) {
-  .dropdown-1{
-    width: 20vw;
-    box-sizing: border-box;
-  }
-}
-
-.dropdown>ul {
-  margin-left: 0;
-}
-
-/* Sub-sections of the mega menu */
-.dropdown-section {
-  width: 15%;
-  float: left;
-  padding: 10px;
-  margin-left: 150px;
-}
-
-.dropdown-section .main-topic {
-  color: #ffffff;
-  padding-bottom: 10px;
-  font-size: 16px;
-  border-bottom: 0.5px solid #ffffff;
-  margin-bottom: 10px;
-}
-
-.dropdown-section a {
-  color: #a9b8d0;
-  display: block;
-  padding: 5px 0;
-  text-decoration: none;
-  font-size: 14px;
+  justify-content: start;
 }
 
 
-/* Clearfix for the float */
-.dropdown::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-.dropdown a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.menu-item:hover .dropdown {
-  display: block;
-}
-
-.main-topic {
-  color: white;
-  padding: 8px 16px;
-  display: block;
-  text-decoration: none;
-}
-
-.subtopics a {
-  color: #a9b8d0;
-  padding: 8px 16px;
-  display: block;
-  text-decoration: none;
-}
-
-#navbar .nav-container {
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-
-
-/*changes end section*/
-/* Brand Logo */
-.brand-logo img {
-  height: 60px;
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .brand-logo {
-  margin-left: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 5px; 
+    margin-right: 25px;
+    margin-top: 5px;
+    vertical-align: middle;
+    height: auto;
+    align-items: center !important;
 }
 
-#menu-link {
-  font-size: 16px; 
+.brand-logo img{
+    height: 55px;
+    vertical-align: middle;
+}
+
+.dropdown {
+    /* overflow: hidden; */
+    display: inline-block;
+
+}
+
+.dropdown .megadropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.fa-angle-down {
+    color: #000000;
+    padding-left: 10px;
+    align-self: center;
+    font-size: 1rem;
 }
 
 
-/*changes end section*/
-
-/* Navigation Menu */
-.nav-menu {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin-right: auto;
-  margin-left: 5%;
-  position: static;
+.mega-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0067B3;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-.nav-menu li {
-  padding: 0 10px;
+
+.dropdown:hover .mega-dropdown-content {
+    display: block;
 }
 
-.nav-menu li a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  display: block;
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: auto;
 }
 
-#jobs-link {
-  color: #dfc010;
+.column a {
+    float: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 8px 0;
+}
+
+.column h3 {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.column h3::after {
+    content: '';
+    display: block;
+    width: 255px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
 /* Search Bar */
 .nav-search {
-  position: relative;
-  margin-right: 50px;
-  margin-left: 20px;
+  position: relative; /* Set relative positioning on the search bar container */
+  margin-left: auto; /* Pushes the nav-search container to the right side */
+  margin-right: 45px;
 }
 
 .nav-search input {
-  padding-left: 30px;
+    padding-left: 30px;
+    border: 2px solid #DFDEE0;
+    border-radius: 4px;
+    height: 35px;
+    width: 280px;
+    background-color: #DFDEE0;
+    color: rgba(0, 0, 0, 0.42);
+    font-size: 14px;
+    outline: none;
+}
+
+.nav-search .fa-search {
+  position: absolute; /* Set absolute positioning to place the icon */
+  top: 50%; /* Center the icon vertically */
+  left: 10px; /* Position the icon 10px from the left side of the input field */
+  transform: translateY(-50%); /* Center the icon vertically */
+  color: rgba(0, 0, 0, 0.42);
+  font-size: 13px;
+  pointer-events: none; /* Disable pointer events so the icon doesn't block input */
+}
+
+#search {
+  padding-left: 30px; /* Add padding to the input field to make space for the icon */
   border: 2px solid #DFDEE0;
   border-radius: 4px;
   height: 35px;
@@ -271,74 +200,864 @@ header {
   outline: none;
 }
 
-.nav-search .fa-search {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  color: rgba(0, 0, 0, 0.42);
-  font-size: 13px;
-  pointer-events: none;
-}
-
-
-/* Icons and Profile */
+/*Nav-Items*/
 .nav-items {
   display: flex;
   align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+  margin-right: 15px;
 }
+
 
 
 .nav-items img.flag,
-.nav-items i.fas.fa-moon,
-.nav-items img.user {
-  width: 35px;
-  height: 35px;
-  object-fit: contain;
-  margin-right: 20px;
-}
-
 .nav-items i.fas.fa-moon {
-  padding-top: 4px;
-  font-size: 25px;
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    margin-right: 20px;
 }
 
 .nav-items img.user {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 50%;
+    display: block;
 }
 
-/* user drop */
+.user-button {
+    background: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .user-dropdown {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 140px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  top: 80px;
-  right: 5px;
+  display: flex; 
+  position: relative; 
+  align-items: center; /* Vertically center the image */
+  justify-content: center; /* Optionally, center the image horizontally */
 }
 
-.user-dropdown a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.nav-items i{
+  padding: 4px;
+}
+.nav-items i.fas.fa-moon {
+    font-size: 25px;
+}
+
+.dropdown-content {
+  width: 120px;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 1 !important;
+    right: 0;
+    top: 100%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 .show {
-  display: block;
+    display: block;
 }
 
-.user-dropdown a i {
-  margin-right: 5px; /* Adjust the margin value as needed */
-  color: #8b8b8b;
+/* Submenu styles */
+.submenu {
+    background-color: #0000A3;
+    display: flex;
+    justify-content: center;
+    line-height: 60px;
+    margin: 0;
+    border: 1px solid rgba(34, 34, 34, 0.3);
 }
 
-.user-dropdown a {
-  color: #8b8b8b;
+.submenu-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    height: 55px;
 }
 
-/* end of user drop */
+.submenu-title span {
+    font-size: 20px;
+    color: #f8f8f8;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.submenu-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.submenu-list li {
+    padding: 0 20px;
+}
+
+.submenu-list .projects-link {
+    color: #ffffff;
+}
+
+.submenu-list .jobs-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.submenu-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.submenu-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.submenu-actions button {
+    padding: 5px 10px;
+    background-color: #0000A3;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #cacaca9f;
+}
+
+.submenu-actions .fa-angle-down {
+    color: #ffffff;
+    padding-left: 10px;
+    align-self: center;
+    font-size: 1 rem;
+}
+
+.submenu-actions button:hover {
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropbtn:hover {
+    background-color: initial;
+}
+
+.show {
+    display: block;
+}
+
+
+/* Responsive design starts here */
+
+  
+  
+  @media only screen and (max-width: 375px) {
+
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .brand-logo img {
+        max-width: 80px; 
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+    .megadropbtn {
+        font-size: 12px; 
+        padding: 10px 0; 
+    }
+    .nav-search,
+    .nav-items i.fas.fa-moon,
+    .nav-items img.flag {
+        display: none;
+    }
+    .user-dropdown {
+        position: relative; 
+        margin-right: 20px; 
+    }
+    .user-dropdown .user-button {
+        width: 10px; 
+        height: 10px; 
+        padding: 10px; 
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+  
+  .submenu-container {
+    justify-content: space-between; 
+    padding: 0 20px !important; 
+    }
+  
+  .submenu-title {
+    margin-right: 40px; 
+    }
+  
+  .submenu-title span {
+    font-size: 12px;
+    padding-right: 0; 
+    }
+  
+  .submenu-list {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: nowrap; 
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+    }
+  
+  .submenu-list li {
+    padding: 0 5px; 
+    flex: 1; 
+    justify-content: space-between; 
+    }
+  
+  .submenu-list li a {
+    font-size: 12px;
+    white-space: nowrap;
+    }
+  
+  .submenu-actions {
+    padding: 0; 
+    }
+  
+  .submenu-actions button {
+    font-size: 12px; 
+    padding: 5px; 
+    margin: 0; 
+    white-space: nowrap; 
+    }
+  
+  .submenu-actions .fa-angle-down {
+    padding-left: 5px; 
+    font-size: 0.7rem; 
+    }
+  
+  
+  
+  }
+  
+  /* Mobile Devices - Medium Phones */
+  @media only screen and (min-width: 322px) and (max-width: 425px) {
+
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .brand-logo img {
+        max-width: 80px; 
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+    .megadropbtn {
+        font-size: 12px; 
+        padding: 10px 0; 
+    }
+    .nav-search,
+    .nav-items i.fas.fa-moon,
+    .nav-items img.flag {
+        display: none;
+    }
+    .user-dropdown {
+        position: relative; 
+        margin-right: 20px; 
+    }
+    .user-dropdown .user-button {
+        width: 10px; 
+        height: 10px; 
+        padding: 10px; 
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+  
+  
+    .submenu-container {
+    justify-content: space-between; /* Adjust the space between elements */
+    padding: 0 20px !important; 
+    }
+  
+  .submenu-title {
+    margin-right: 40px; /* Add some space to the right of the title */
+    }
+  
+  .submenu-title span {
+    font-size: 12px; /* Reduce font size */
+    padding-right: 0; /* Remove padding */
+    }
+  
+  .submenu-list {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure list uses the full width */
+    }
+  
+  .submenu-list li {
+    padding: 0 5px; /* Reduce padding between list items */
+    flex: 1; /* Allow the list to fill the available space */
+    justify-content: space-between; /* Space out the links if there's room */
+    }
+  
+  .submenu-list li a {
+    font-size: 12px; /* Reduce font size */
+    white-space: nowrap; /* Prevent text wrapping */
+    }
+  
+  .submenu-actions {
+    padding: 0; /* Remove padding */
+    }
+  
+  .submenu-actions button {
+    font-size: 12px; /* Reduce font size */
+    padding: 5px; /* Reduce padding */
+    margin: 0; /* Remove margin */
+    white-space: nowrap; /* Prevent text wrapping */
+    }
+  
+  .submenu-actions .fa-angle-down {
+    padding-left: 5px; /* Reduce space after text */
+    font-size: 0.7rem; /* Reduce icon size */
+    }
+  
+  .projects-link {
+    display: inline-block; /* Or 'block', depending on your design */
+    min-width: 50px; /* Adjust as needed */
+    text-align: center; /* Center the text if there's space */
+    margin-right: 10px; /* Ensure some space on the right */
+    }
+  
+    .project-search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 5px; 
+    }
+  
+  .search-box {
+    flex-grow: 1; 
+    margin-top: 0; 
+    margin-right: 5px; 
+    margin-left: 5px;
+    font-size: 15px;
+    padding: 10px 8px; 
+    }
+  
+  #searchProjects {
+    width: 170px; 
+    padding: 5px 5px 5px 30px; 
+    }
+  #searchProjects::placeholder {
+    font-size: 14px; 
+    line-height: normal;
+    color: #aaa; 
+    }
+  .btn-create-project {
+    padding: 5px 8px; 
+    font-size: 10px; 
+    margin-top: 0;
+    margin-left: 5px; 
+    width: 100px;
+    height: 28px;
+    }
+  
+  .menu-icons ul {
+    flex: 0 0 auto; 
+    }
+  
+  .menu-icons img {
+    width: 20px; 
+    height: auto; 
+    }
+  
+    
+  .edit-btn {
+    padding: 5px 8px; 
+    font-size: 12px; 
+  }
+  
+  .card-container .card {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .table-controls {
+    justify-content: space-between; 
+    padding: 10px 20px; /* Reduced padding for smaller screen size */
+  }
+  
+  .entries-info {
+    font-size: 12px; /* Reduce font size to fit smaller screens */
+  }
+  
+  .table-pagination {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of pagination elements */
+  }
+  
+  .table-pagination a {
+    margin: 0 2px; /* Reduce space between pagination links */
+    font-size: 12px; /* Reduce font size for pagination links */
+  }
+  
+  .table-controls span {
+    margin: 0 4px; /* Adjust margin around ellipsis or other spans */
+  }
+  
+  
+  }
+  
+  /* Mobile Devices - Large Phones */
+  @media only screen and (min-width: 426px) and (max-width: 650px) {
+
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .brand-logo img {
+        max-width: 80px; 
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+    .megadropbtn {
+        font-size: 12px; 
+        padding: 10px 0; 
+    }
+    .nav-search,
+    .nav-items i.fas.fa-moon,
+    .nav-items img.flag {
+        display: none;
+    }
+    .user-dropdown {
+        position: relative; 
+        margin-right: 20px; 
+    }
+    .user-dropdown .user-button {
+        width: 10px; 
+        height: 10px; 
+        padding: 10px; 
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+  
+  
+    .submenu-container {
+    justify-content: space-between; /* Adjust the space between elements */
+    padding: 0 20px !important; 
+    }
+  
+  .submenu-title {
+    margin-right: 40px; /* Add some space to the right of the title */
+    }
+  
+  .submenu-title span {
+    font-size: 12px; /* Reduce font size */
+    padding-right: 0; /* Remove padding */
+    }
+  
+  .submenu-list {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure list uses the full width */
+    }
+  
+  .submenu-list li {
+    padding: 0 5px; /* Reduce padding between list items */
+    flex: 1; /* Allow the list to fill the available space */
+    justify-content: space-between; /* Space out the links if there's room */
+    }
+  
+  .submenu-list li a {
+    font-size: 12px; /* Reduce font size */
+    white-space: nowrap; /* Prevent text wrapping */
+    }
+  
+  .submenu-actions {
+    padding: 0; /* Remove padding */
+    }
+  
+  .submenu-actions button {
+    font-size: 12px; /* Reduce font size */
+    padding: 5px; /* Reduce padding */
+    margin: 0; /* Remove margin */
+    white-space: nowrap; /* Prevent text wrapping */
+    }
+  
+  .submenu-actions .fa-angle-down {
+    padding-left: 5px; /* Reduce space after text */
+    font-size: 0.7rem; /* Reduce icon size */
+    }
+  
+
+  }
+  
+  /* Large Tablets and Small Laptops */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    
+  .nav-container {
+    /* Adjust spacing and alignment */
+    justify-content: space-between;
+    height: 90px; /* Match with the header height if adjusted */
+  }
+    
+  .nav-menu {
+    /* Reduce space between menu items */
+    justify-content: space-between;
+  }
+    
+  #menu-link{
+    font-size: 16px;
+  }
+    
+  .nav-items img.flag,
+  .nav-items i.fas.fa-moon,
+  .nav-items img.user {
+    /* Reduce icon sizes for smaller screens */
+    width: 25px;
+    height: 25px;
+  }
+    
+  .nav-items {
+    /* Reduce margins around icons for smaller screens */
+    margin-right: 10px;
+  }
+    
+  .brand-logo img {
+    /* Reduce logo size if needed */
+    width: auto; /* Adjust as necessary */
+    height: 50px; /* Adjust as necessary */
+  }
+    
+  .nav-search input {
+    /* Adjust width of search input for smaller screens */
+    width: 200px; /* Adjust as necessary */
+  }
+    
+  .dropdown {
+    /* Adjust dropdown for smaller screens */
+    width: 820px; /* Match with the device width */
+    left: 0;
+    margin-left: 0; /* Reset the margin if it's not necessary */
+  }
+  
+
+
+
+  
+  }
+  
+  /* Ipad Mini */
+@media only screen and (width: 768px) and (height: 1024px) {
+
+    /* Reduce size and margin of the search bar */
+    .nav-search {
+      margin-left: 20px; /* Adjust the left margin to fit the screen */
+    }
+  
+    .nav-search input[type="search"] {
+      width: 180px; /* Reduce the width of the search input */
+    }
+  
+    /* Adjust the size of icons and ensure they fit on the screen */
+    .nav-items img.flag,
+    .nav-items i.fas.fa-moon,
+    .nav-items img.user {
+      width: 30px; /* Reduce the icon size */
+      height: 30px; /* Reduce the icon size */
+      margin-right: 10px; /* Reduce the space between icons */
+    }
+  
+    /* Adjust user-dropdown button */
+    .user-dropdown .user-button {
+      width: 30px; /* Match the size with the icon adjustments above */
+      height: 30px; /* Match the size with the icon adjustments above */
+    }
+  
+    /* Adjust the layout of nav items to ensure proper spacing */
+    .nav-items {
+      display: flex;
+      justify-content: flex-end; /* Align items to the end */
+      align-items: center; /* Center items vertically */
+      padding-right: 20px; /* Add padding to the right */
+    }
+  
+  }
+  
+  /* Ipad Pro */
+  @media only screen and (width: 1024px) and (height: 1366px) {
+  
+    /* Reduce size and margin of the search bar */
+    .nav-search {
+        margin-left: 20px; /* Adjust the left margin to fit the screen */
+      }
+    
+      .nav-search input[type="search"] {
+        width: 180px; /* Reduce the width of the search input */
+      }
+    
+      /* Adjust the size of icons and ensure they fit on the screen */
+      .nav-items img.flag,
+      .nav-items i.fas.fa-moon,
+      .nav-items img.user {
+        width: 30px; /* Reduce the icon size */
+        height: 30px; /* Reduce the icon size */
+        margin-right: 10px; /* Reduce the space between icons */
+      }
+    
+      /* Adjust user-dropdown button */
+      .user-dropdown .user-button {
+        width: 30px; /* Match the size with the icon adjustments above */
+        height: 30px; /* Match the size with the icon adjustments above */
+      }
+    
+      /* Adjust the layout of nav items to ensure proper spacing */
+      .nav-items {
+        display: flex;
+        justify-content: flex-end; /* Align items to the end */
+        align-items: center; /* Center items vertically */
+        padding-right: 20px; /* Add padding to the right */
+      }
+    
+    }
+  
+  /* Ipad Air */
+  @media only screen and (width: 820px) and (height: 1180px) {
+ 
+    /* Reduce size and margin of the search bar */
+    .nav-search {
+        margin-left: 20px; /* Adjust the left margin to fit the screen */
+      }
+    
+      .nav-search input[type="search"] {
+        width: 180px; /* Reduce the width of the search input */
+      }
+    
+      /* Adjust the size of icons and ensure they fit on the screen */
+      .nav-items img.flag,
+      .nav-items i.fas.fa-moon,
+      .nav-items img.user {
+        width: 30px; /* Reduce the icon size */
+        height: 30px; /* Reduce the icon size */
+        margin-right: 10px; /* Reduce the space between icons */
+      }
+    
+      /* Adjust user-dropdown button */
+      .user-dropdown .user-button {
+        width: 30px; /* Match the size with the icon adjustments above */
+        height: 30px; /* Match the size with the icon adjustments above */
+      }
+    
+      /* Adjust the layout of nav items to ensure proper spacing */
+      .nav-items {
+        display: flex;
+        justify-content: flex-end; /* Align items to the end */
+        align-items: center; /* Center items vertically */
+        padding-right: 20px; /* Add padding to the right */
+      }
+    
+    }
+  
+  
+  /* Mobile Devices */
+  @media only screen and (max-width: 767px) {
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .brand-logo img {
+        max-width: 80px; 
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+    .megadropbtn {
+        font-size: 12px; 
+        padding: 10px 0; 
+    }
+    .nav-search,
+    .nav-items i.fas.fa-moon,
+    .nav-items img.flag {
+        display: none;
+    }
+    .user-dropdown {
+        position: relative; 
+        margin-right: 20px; 
+    }
+    .user-dropdown .user-button {
+        width: 10px; 
+        height: 10px; 
+        padding: 10px; 
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+  
+  }
+  
+  
+  /* Tablets */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    /* Reduce size and margin of the search bar */
+    .nav-search {
+        margin-left: 20px; /* Adjust the left margin to fit the screen */
+      }
+    
+      .nav-search input[type="search"] {
+        width: 180px; /* Reduce the width of the search input */
+      }
+    
+      /* Adjust the size of icons and ensure they fit on the screen */
+      .nav-items img.flag,
+      .nav-items i.fas.fa-moon,
+      .nav-items img.user {
+        width: 30px; /* Reduce the icon size */
+        height: 30px; /* Reduce the icon size */
+        margin-right: 10px; /* Reduce the space between icons */
+      }
+    
+      /* Adjust user-dropdown button */
+      .user-dropdown .user-button {
+        width: 30px; /* Match the size with the icon adjustments above */
+        height: 30px; /* Match the size with the icon adjustments above */
+      }
+    
+      /* Adjust the layout of nav items to ensure proper spacing */
+      .nav-items {
+        display: flex;
+        justify-content: flex-end; /* Align items to the end */
+        align-items: center; /* Center items vertically */
+        padding-right: 20px; /* Add padding to the right */
+      }
+    
+  }
+  
+
+  
+  @media only screen and (max-width: 320px) {
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .brand-logo img {
+        max-width: 80px; 
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+    .megadropbtn {
+        font-size: 12px; 
+        padding: 10px 0; 
+    }
+    .nav-search,
+    .nav-items i.fas.fa-moon,
+    .nav-items img.flag {
+        display: none;
+    }
+    .user-dropdown {
+        position: relative; 
+        margin-right: 20px; 
+    }
+    .user-dropdown .user-button {
+        width: 10px; 
+        height: 10px; 
+        padding: 10px; 
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+  
+  .submenu-container {
+    padding: 0 10px; 
+  }
+  
+  .submenu-title span {
+    font-size: 18px; 
+    padding-right: 10px; 
+  }
+  
+  .submenu-list li {
+    padding: 0 10px; 
+  }
+  
+  .submenu-list li a {
+    font-size: 12px; 
+  }
+  
+  .submenu-actions {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .submenu-actions button {
+    padding: 5px 10px; 
+    font-size: 12px; 
+    margin-bottom: 5px; 
+  }
+  
+  .submenu-actions .fa-angle-down {
+    font-size: 0.8rem; 
+  }
+  
+  .dropdown-content {
+    right: 0; 
+    left: auto; 
+  }
+  }
+  
+  
+  
+  

@@ -24,14 +24,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  /* Adjust width as needed */
-  height: 100%;
-  /* Adjust height as needed */
-  z-index: -1;
-  /* Move the image behind other content */
-  opacity: 1;
-  /* Adjust opacity as needed */
+  width: 100%;/* Adjust width as needed */
+  height: 100%;/* Adjust height as needed */
+  z-index: -1;/* Move the image behind other content */
+  opacity: 1;/* Adjust opacity as needed */
 }
 
 
@@ -57,7 +53,7 @@
   z-index: 99;
   background-color: #ffffff;
   padding: 25px;
-  width: 26vw;
+  width: 23vw;
   height: auto;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 15px;
@@ -298,18 +294,15 @@
 /*start slider and dots*/
 .slider-container {
   position: fixed;
-  max-width: 525px;
-  /* Adjust as needed */
+  max-width: 440px;/* Adjust as needed */
   overflow: hidden;
   width: 26vw;
   margin-left: 60px;
-  padding: 10px;
-  /* Add padding to give some space */
+  padding: 10px;/* Add padding to give some space */
 }
 
 .dots {
-  text-align: center;
-  /* Align dots to the left */
+  text-align: center;/* Align dots to the left */
   margin-top: 10px;
 }
 
