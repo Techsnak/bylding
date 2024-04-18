@@ -220,9 +220,10 @@ header {
 
 /* Sub-sections of the mega menu */
 .dropdown-section {
-  width: 25%;
+  width: 22%;
   float: left;
   padding: 10px;
+  margin-left: 100px;
 }
 
 .dropdown-section .main-topic {
@@ -306,8 +307,7 @@ header {
 .nav-menu li a {
   text-decoration: none;
   color: white;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 16px;
   display: block;
 }
 
