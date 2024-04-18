@@ -25,13 +25,14 @@ body {
 
 
 body .navbar {
-    /* overflow: hidden; */
-    background-color: #f9f9f9;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: start;
+      /* overflow: hidden; */
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
+
 
 .navbar a {
     float: left;
@@ -150,9 +151,9 @@ body .navbar {
 
 /* Search Bar */
 .nav-search {
-    position: relative;
-    margin-right: 50px;
-    margin-left: 540px;
+  position: relative; /* Set relative positioning on the search bar container */
+  margin-left: auto; /* Pushes the nav-search container to the right side */
+  margin-right: 45px;
 }
 
 .nav-search input {
@@ -168,23 +169,35 @@ body .navbar {
 }
 
 .nav-search .fa-search {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    color: rgba(0, 0, 0, 0.42);
-    font-size: 13px;
-    pointer-events: none;
+  position: absolute; /* Set absolute positioning to place the icon */
+  top: 50%; /* Center the icon vertically */
+  left: 10px; /* Position the icon 10px from the left side of the input field */
+  transform: translateY(-50%); /* Center the icon vertically */
+  color: rgba(0, 0, 0, 0.42);
+  font-size: 13px;
+  pointer-events: none; /* Disable pointer events so the icon doesn't block input */
+}
+
+#search {
+  padding-left: 30px; /* Add padding to the input field to make space for the icon */
+  border: 2px solid #DFDEE0;
+  border-radius: 4px;
+  height: 35px;
+  width: 280px;
+  background-color: #DFDEE0;
+  color: rgba(0, 0, 0, 0.42);
+  font-size: 14px;
+  outline: none;
 }
 
 /*Nav-Items*/
 .nav-items {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+  margin-right: 15px;
 }
+
 
 
 .nav-items img.flag,
@@ -219,20 +232,22 @@ body .navbar {
     cursor: pointer;
 }
 
-.user-dropdown img {
-    display: block;
-    width: auto;
-    height: auto;
-    margin: auto;
-
+.user-dropdown {
+  display: flex; 
+  position: relative; 
+  align-items: center; /* Vertically center the image */
+  justify-content: center; /* Optionally, center the image horizontally */
 }
 
+.nav-items i{
+  padding: 4px;
+}
 .nav-items i.fas.fa-moon {
-    padding-top: 4px;
     font-size: 25px;
 }
 
 .dropdown-content {
+  width: 120px;
     display: none;
     position: absolute;
     background-color: #ffffff;
@@ -509,7 +524,7 @@ body .navbar {
 }
 
 .card-text {
-    font-size: 18px;
+    font-size: 15px;
     color: #333;
     margin-bottom: 8px;
 }
@@ -1350,6 +1365,14 @@ body .navbar {
   .menu-icons ul {
     display: flex;
     justify-content: space-around;
+  }
+
+  .card-location {
+    font-size: 13px;
+  }
+
+  .card-text {
+    font-size: 14px;
   }
   
   
