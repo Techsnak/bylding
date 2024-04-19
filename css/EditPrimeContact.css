@@ -9,6 +9,7 @@
    --yellow2: #FFD530;
    --white: #FFFFFF;
    --lightpink: #F7F6FE;
+   --gray:#DDDDDD;
 }
 
 * {
@@ -51,6 +52,9 @@
   background-color: var(--lightpink);
   padding: 15px 120px 15px 120px; /* top right bottom left */
   border-radius: 15px;
+  max-height: 600px; /* Set a max height for the container */
+  overflow-y: auto; /* Enable vertical scrolling when content exceeds max-height */
+  scrollbar-color: var(--main-color) var(--gray); /* Thumb and track colors */
 }
 
 .ee {
