@@ -52,9 +52,23 @@
   background-color: var(--lightpink);
   padding: 15px 120px 15px 120px; /* top right bottom left */
   border-radius: 15px;
-  max-height: 600px; /* Set a max height for the container */
+  max-height: 600px;    /* Set a max height for the container */
   overflow-y: auto; /* Enable vertical scrolling when content exceeds max-height */
-  scrollbar-color: var(--main-color) var(--gray); /* Thumb and track colors */
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--gray);
+  border-radius: 0px 13px 13px 0px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 0px 13px 13px 0px;
 }
 
 .ee {

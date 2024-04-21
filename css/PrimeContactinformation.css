@@ -31,7 +31,7 @@
   font-weight: 600;
 }
 
-.btn.btn-primary {
+#btnUpdate {
   width: 150px;
   height: 50px;
   background-color: var(--main-color);
@@ -52,24 +52,8 @@
   background-color: var(--lightpink);
   padding: 15px 120px 15px 120px; /* top right bottom left */
   border-radius: 15px;
-  max-height: 600px; /* Set a max height for the container */
-  overflow-y: auto; /* Enable vertical scrolling when content exceeds max-height */
 }
 
-::-webkit-scrollbar {
-  width: 15px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--gray);
-  border-radius: 0px 13px 13px 0px;
-
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--main-color);
-  border-radius: 0px 13px 13px 0px;
-}
 
 .ee {
 margin: 0px 50px 0px 50px;
@@ -85,128 +69,115 @@ margin: 0px 50px 0px 50px;
 }
 
 
-/*sub nav*/
-/* Submenu styles */
-.submenu {
+/*custom-submenu */
+/* Modified class names */
+.custom-submenu {
   background-color: #0000A3;
   display: flex;
   justify-content: center;
-  line-height: 60px;/* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  */
+  line-height: 60px;
   margin: 0;
   border: 1px solid rgba(34, 34, 34, 0.3);
 }
 
-.submenu-container {
+.custom-submenu-container {
   display: flex;
   align-items: center;
   width: 100%;
   padding: 0 20px;
 }
 
-/* Submenu title */
-.submenu-title span {
+.custom-submenu-title span {
   font-size: 24px;
   color: #f8f8f8;
   font-weight: bold;
-  padding-right: 30px;
+  padding-right: 10px;
 }
 
-.submenu-list {
+.custom-submenu-list {
   list-style: none;
   display: flex;
   margin: 0;
-  margin-left: 115px;
   padding: 0;
+  margin-left: 130px;
 }
 
-.submenu-list li {
-  padding: 0 20px;
-
+.custom-menu-item {
+  padding: 0 21px;
 }
 
-/* Change color for the 'Projects' link using a class */
-.submenu-list .projects-link {
-  color: #ffffff;
-}
-
-.submenu-list .jobs-link {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.submenu-list li a {
+.custom-projects-link {
   text-decoration: none;
-  color: #333;
+  color: white;
   font-size: 14px;
   font-weight: 600;
 }
 
-/**/
-
-
-/* Styles for export dropdown */
-.export-dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Style for the main Export button */
-.export-button {
-  margin-top: 12px;
-  margin-right: 10px;
-  background-color: #f0f0f0;
-  color: #333;
-  padding: 8px 12px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  height: 40px; /* Set the desired button height here */
-  line-height: 20px; /* Same as height to vertically center the text */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  color: var(--white);
-  border: 1px solid #ffffff;
-  float: right;
-}
-
-.export-icon {
-  margin-left: 5px;
-}
-
-.export-menu {
+.new-dropdown {
   display: none;
   position: absolute;
-  top: 83%; /* Position the menu below the button */
-  background-color: white;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: var(--blue-garatto);
+  /* Adjust the width as needed */
+  width: 200px; /* Change this value to your desired width */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-.export-option {
-  width: 100px;
+.new-dropdown.bb {
+  width: 250px; /* Adjust the width as needed */
+  margin-left: 0px;
+}
+
+
+.new-dropdown-section {
+  width: 250px;
+  float: left;
+  padding: 10px;
+}
+
+.custom-main-topic {
+  color: white;
+  padding-bottom: 10px;
+  font-size: 16px;
+  border-bottom: 0.5px solid #ffffff;
+  margin-bottom: 5px;
+}
+
+.custom-subtopics {
+  width: 240px; /* Adjust this value to match the width of new-dropdown */
+}
+
+.custom-subtopics a {
+  color: #a9b8d0;
+  display: block;
+  padding: 5px 0;
+  text-decoration: none;
+  font-size: 14px;
+  /* Remove width declaration here */
+}
+
+.new-dropdown::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.new-dropdown a {
   color: black;
-  padding: 8px 12px;
-  display: block;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+  padding: 6px 6px;
+  text-decoration: none;
 }
 
-.export-option:hover {
-  background-color: #f0f0f0;
-}
-
-/* Show export menu when the button is clicked */
-.export-dropdown.show .export-menu {
+.custom-menu-item:hover .new-dropdown {
   display: block;
 }
 
+.fa.fa-angle-down {
 
+  color: var(--white); /* Change color to blue */
+  font-size: 20px; /* Change font size */
 
-/**/
-
+}
 
 
 /*nav bar*/
@@ -241,8 +212,6 @@ header {
   position: relative;
   display: inline-block;
 }
-
-
 
 /*navbar chenged*/
 #menu-link {
@@ -291,27 +260,25 @@ header {
 
 /* Mega menu dropdown */
 .dropdown {
-  display: flex; /* Use flexbox to layout the sections evenly */
-  flex-wrap: nowrap; /* No wrapping of items */
   display: none;
   position: absolute;
   background-color: var(--blue-garatto);
   width: 100vw;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  top: 130%;
-  padding: 0 30px;
+  top: 140%;
+  padding: 0 400px;
   margin: 0;
-  margin-left: -293px;
+  margin-left: -300px;
 }
 
 .bb{
-  margin-left: 100px;
+  margin-left: -180px;
 }
 
 @media screen and (max-width: 100vw) {
   .dropdown {
-    width: 100.05vw;
+    width: 100.4vw;
     box-sizing: border-box;
   }
 
@@ -333,12 +300,11 @@ header {
 
 /* Sub-sections of the mega menu */
 .dropdown-section {
-  width: 15%;
+  width: 21%;
   float: left;
   padding: 10px;
-  margin-left: 150px;
+  margin-left: 100px;
 }
-
 
 .dropdown-section .main-topic {
   color: #ffffff;
@@ -355,8 +321,6 @@ header {
   text-decoration: none;
   font-size: 14px;
 }
-
-
 
 
 /* Clearfix for the float */
@@ -399,8 +363,6 @@ header {
   align-items: center;
 }
 
-
-
 /*changes end section*/
 /* Brand Logo */
 .brand-logo img {
@@ -440,11 +402,6 @@ header {
   display: block;
 }
 
-#jobs-link {
-  color: #dfc010;
-}
-
-
 /* Search Bar */
 .nav-search {
   position: relative;
@@ -481,7 +438,6 @@ header {
   align-items: center;
 }
 
-
 .nav-items img.flag,
 .nav-items i.fas.fa-moon,
 .nav-items img.user {
@@ -505,7 +461,7 @@ header {
 
 
 
-/* user drop */
+/* user Drropdown */
 .user-dropdown {
   display: none;
   position: absolute;
@@ -535,26 +491,4 @@ header {
 
 .user-dropdown a {
   color: #8b8b8b;
-}
-
-/* end of user drop */
-
-
-/* Style the input field with ID "PrimaryAddress" */
-#PrimaryAddress {
-    padding-right: 36px; /* Add padding to account for the dropdown icon */
-    width: calc(100% - 36px); /* Calculate width to include padding */
-}
-
-/* Style the dropdown icon inside the input group */
-#PrimaryAddress + .input-group-append .dropdown-icon {
-    background: transparent;
-    border: none;
-    color: #333;
-    padding: 0 12px;
-    cursor: pointer;
-    font-size: 18px; /* Adjust font size for icon as desired */
-    outline: none; /* Remove outline when focused */
-    position: absolute;
-    right: 0; /* Align icon to the right side of the input field */
 }
