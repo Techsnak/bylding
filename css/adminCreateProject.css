@@ -16,13 +16,20 @@
 }
 
 
+
+
 body {
     padding: 0 ; 
+}
+
+.nav-pills > li > a .fa-stack {
+   margin-right: 25px; /* Adjust this value to increase or decrease the gap */
 }
 
 
 .nav-pills > li > a {
    border-radius: 0;
+   margin-left: 15px;
 }
 #wrapper {
    padding-left: 0;
@@ -33,7 +40,7 @@ body {
    overflow: hidden;
 }
 #wrapper.toggled {
-   padding-left: 250px;
+
    overflow: hidden;
 }
 #sidebar-wrapper {
@@ -50,6 +57,7 @@ body {
    -moz-transition: all 0.5s ease;
    -o-transition: all 0.5s ease;
    transition: all 0.5s ease;
+   margin-top: 20px;
 }
 #wrapper.toggled #sidebar-wrapper {
    width: 250px;
@@ -99,6 +107,13 @@ body {
 .sidebar-nav li a:focus {
    text-decoration: none;
 }
+
+.sidebar-nav li.active a {
+   color: blue !important; /* Add !important to override any existing styles */
+   background-color: #f0f0f0; /* Optional: Add background color */
+   font-weight: 900;
+}
+
 .sidebar-nav > .sidebar-brand {
    height: 65px;
    font-size: 18px;
