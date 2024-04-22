@@ -384,6 +384,56 @@
     font-size: 12px;
   }
 
+  .learn-more-btn {
+    padding: 3px;
+    width: 100px;
+    height: 30px;
+    font-size: small;
+  }
+
+  .main-logo {
+    margin-bottom: 20px;
+  }
+
+  .welcome-b-title {
+    font-size: 12px;
+  }
+  
+  .login-title {
+    font-size: 24px;
+  }
+  
+  .form-label {
+    font-size: 11px;
+  }
+  
+  .form-check-label {
+    font-size: 10px;
+  }
+
+  .forgot-password-link {
+    margin-top: 6px;
+    font-size: 10px;
+  }
+
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 599px){
+  .blue-square {
+    display: none;
+  }
+
+  .login-form-container {
+    margin: auto;
+    width: 60vw;
+    margin-top: 30px;
+  }
+
+  .slider-container {
+    display: none;
+  }
+
 
 
 }
