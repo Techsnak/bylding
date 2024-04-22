@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar</title>
+    <title>Nav Bar</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -21,9 +21,7 @@
                 <img src="assets/Logo.png" alt="Company Logo" class="byldinglogo" />
             </div>
             <div class="dropdown">
-                <button class="megadropbtn">
-                    Company Tools
-                    <i class="fa fa-angle-down"></i>
+                <button class="megadropbtn">Company Tools<i class="fa fa-angle-down"></i>
                 </button>
                 <div class="mega-dropdown-content">
                     <div class="row">
@@ -85,37 +83,10 @@
             
     </header>
 
-    <!-- Second section (Submenu) -->
-    <div class="submenu">
-        <div class="submenu-container">
-            <!-- PROJECTS title -->
-            <div class="submenu-title">
-                <span>PROJECTS</span>
-            </div>
-
-            <ul class="submenu-list">
-                <li><a href="projectsNew.html" class="projects-link">Projects</a></li>
-                <li><a href="#" class="jobs-link">Job Sites</a></li>
-            </ul>
-            <div class="submenu-actions">
-                <button onclick="toggleDropdown('myDropdown')" class="dropbtn">Export<i class="fa fa-angle-down"
-                        aria-hidden="true"></i></button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#">PDF</a>
-                    <a href="#">CSV</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
+    <script src="js/moon.js"></script>
 
-
-
-
-  
-
-    <script src="js/scripts.js"></script>
 
     <script>
 // Function to toggle the dropdown visibility
@@ -126,16 +97,30 @@ function toggleDropdown(id) {
     }
 }
 
-// Event listener to handle clicks outside of the dropdown
-window.onclick = function(event) {
-    // Check if the click is not on the user button or its children
-    if (!event.target.closest('.user-button')) {
-        var dropdowns = document.querySelectorAll('.dropdown-content.show');
-        dropdowns.forEach(function(dropdown) {
-            dropdown.classList.remove('show');
-        });
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to toggle the dropdown visibility
+    function toggleDropdown() {
+        var dropdown = document.querySelector('.mega-dropdown-content');
+        dropdown.classList.toggle('show');
     }
-};
+
+    // Event listener for the dropdown button
+    var dropdownBtn = document.querySelector('.megadropbtn');
+    dropdownBtn.addEventListener('click', function(event) {
+        event.stopPropagation(); // Prevent the event from bubbling up to the window
+        toggleDropdown();
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.addEventListener('click', function(event) {
+        var dropdown = document.querySelector('.mega-dropdown-content');
+        if (!event.target.closest('.dropdown')) {
+            dropdown.classList.remove('show');
+        }
+    });
+});
+
+
 
     </script>
 </body>
