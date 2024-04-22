@@ -310,7 +310,9 @@ body {
 }
 
 .nav-items {
-
+   display: flex;
+   align-items: center;
+   margin-left: auto; /* This pushes .nav-items to the right */
 }
 
 #menu-toggle-2 {
