@@ -82,6 +82,7 @@ body {
 /* CSS */
 .active #rightarrowiconec {
    transform: rotate(90deg);
+   transition: transform 1s ease; 
 }
 
 
