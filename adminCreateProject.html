@@ -20,7 +20,8 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header fixed-brand">
             <div class="brand-logo">
-                <img src="assets/Logo.png" alt="Company Logo" class="byldinglogo" />
+                <img src="assets/Logo.png" alt="Company Logo" class="byldinglogo" id="logo1" />
+                <img src="assets/2ndlogo.svg" alt="Company Logo" class="byldinglogo" id="logo2" style="display: none;" />
             </div>
         </div>
         <!-- navbar-header-->
@@ -444,6 +445,23 @@ var listItems = document.querySelectorAll('.sidebar-nav li a'); // changed selec
 listItems.forEach(function(item) {
     item.addEventListener('click', toggleActive);
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    var menuIcon = document.querySelector(".fa.fa-bars");
+    menuIcon.addEventListener("click", function() {
+        var logo1 = document.getElementById("logo1");
+        var logo2 = document.getElementById("logo2");
+
+        if (logo1.style.display === "none") {
+            logo1.style.display = "inline-block";
+            logo2.style.display = "none";
+        } else {
+            logo1.style.display = "none";
+            logo2.style.display = "inline-block";
+        }
+    });
+});
+
     </script>
 
 </body>

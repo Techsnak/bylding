@@ -71,6 +71,11 @@ body {
    stroke: blue;
 }
 
+#logo2 {
+   height: 40px;
+   margin-top: 5px;
+   margin-left: 5px;
+}
 
 
 
