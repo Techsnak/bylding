@@ -32,10 +32,25 @@ body {
    margin-left: 15px;
 }
 
+.fa-stack {
+   display: flex; /* Use flexbox */
+   align-items: center; /* Align items vertically */
+}
+
+.fa-stack img {
+   margin-right: 5px; /* Adjust spacing between the icons */
+}
+
+.arrow-icon {
+   width: 20px; /* Adjust the width and height as needed */
+   height: 20px;
+}
+
 .dashboard-icon {
    width: 25px; /* Adjust the width and height as needed */
    height: 25px;
 }
+
 
 
 #wrapper {
