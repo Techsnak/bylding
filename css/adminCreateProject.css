@@ -81,7 +81,8 @@ body {
 
 /* CSS */
 .active #rightarrowiconec {
-   transform: rotate(90deg);
+   transform: rotate(90deg) translateX(-30%);
+   transform-origin: center;
    transition: transform 0.8s ease; 
 }
 
@@ -181,7 +182,7 @@ body {
 /* Hide the submenu by default */
 .navsubmenu {
    display: none;/* Additional styles for the submenu */
-   margin-left: 110px;
+   margin-left: 95px;
    
 }
 
