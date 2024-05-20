@@ -461,3 +461,30 @@ body {
   justify-content: center; /* Center horizontally */
 }
 }
+
+/*height media querry*/
+@media only screen and (max-height: 710px) {
+  .image-container img {
+    width: 340px;
+  }
+  .image-container {
+    top: 190px;
+  }
+
+  .main-logo {
+    margin-bottom: 10px;
+  }
+  .login-form-container {
+    margin-top: 30px;
+  }
+  .dontthave-cc {
+    margin-top: 10px;
+  }
+  .dots {
+    margin-top: 5px;
+  }
+  .social-login {
+    margin: 0px 5px;
+  }
+
+}
