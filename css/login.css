@@ -340,9 +340,11 @@
 @media only screen and (max-width: 1200px) {
   .login-form-container {
     max-width: 350px;
+    margin-left: 60px;
   }
   .slider-container {
     max-width: 350px;
+    margin-left: 60px;
   }
 
   .image-container {
