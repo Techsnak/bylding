@@ -144,9 +144,7 @@ margin: 0px 50px 0px 50px;
   font-size: 14px;
   font-weight: 600;
 }
-
 /**/
-
 
 /* Styles for export dropdown */
 .export-dropdown {
@@ -562,4 +560,9 @@ header {
     outline: none; /* Remove outline when focused */
     position: absolute;
     right: 0; /* Align icon to the right side of the input field */
+}
+
+/* Large devices (laptops/desktops, 992px ) */
+@media only screen and (max-width: 992px) {
+
 }

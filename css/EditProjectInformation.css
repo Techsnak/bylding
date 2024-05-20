@@ -490,3 +490,9 @@ header {
 .user-dropdown a {
   color: #8b8b8b;
 }
+
+@media only screen and (max-width: 992px) {
+  #maincontaininputs {
+    padding: 15px 30px 15px 30px; /* top right bottom left */
+  }
+}
