@@ -30,7 +30,6 @@
   opacity: 1;/* Adjust opacity as needed */
 }
 
-
 .main-logo {
   margin-bottom: 20px;
   display: flex;
@@ -43,7 +42,6 @@
   max-width: 60%;
   max-height: 50%;
 }
-
 
 .login-form-container {
   position: relative;
@@ -112,15 +110,10 @@
   color: var(--main-color);
 }
 
-/* .forgot-password-link:hover {
-  color: #313131
-} */
-
 .sign-up-link-opt {
   font-size: 13px;
   text-align: center;
   margin-top: 25px;
-
 }
 
 .sign-up-click {
@@ -138,7 +131,6 @@
   margin-bottom: 5px;
   margin-top: 15px;
 }
-
 
 .social-login {
   width: 180px;
@@ -163,7 +155,6 @@
 .social-login:hover {
   background-color: #e0e0e0;
 }
-
 
 .or-login-with {
   text-align: center;
@@ -272,7 +263,6 @@
   right: -100px;
   transform: translate(-55%, -50%);
 }
-
 
 .image-container img {
   width: 500px;
@@ -465,5 +455,4 @@ body {
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
 }
-
 }
