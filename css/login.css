@@ -32,18 +32,15 @@
 
 
 .main-logo {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: flex;
-  justify-content: center;
-  /* Horizontal centering */
-  align-items: center;
-  /* Vertical centering */
-  height: 100%;
-  /* Ensure the div takes up the full height */
+  justify-content: center;/* Horizontal centering */
+  align-items: center;/* Vertical centering */
+  height: 100%;/* Ensure the div takes up the full height */
 }
 
 .main-logo img {
-  max-width: 50%;
+  max-width: 60%;
   max-height: 50%;
 }
 
@@ -53,12 +50,12 @@
   z-index: 99;
   background-color: #ffffff;
   padding: 25px;
-  width: 23vw;
+  max-width: 430px;
   height: auto;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   margin-top: 60px;
-  margin-left: 60px;
+  margin-left: 100px;
 }
 
 .btn-login-link {
@@ -82,14 +79,14 @@
 }
 
 .welcome-b-title {
-  font-size: 14px;
+  font-size: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .login-title {
   font-weight: bold;
-  font-size: 28px;
+  font-size: 33px;
 }
 
 .form-label {
@@ -216,7 +213,7 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 45%;
+  width: 750px;
   height: 90%;
   background-color: #0000a3c5;
   z-index: 2;
@@ -248,10 +245,10 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  margin-bottom: 225px;
+  margin-bottom: 265px;
   margin-right: 30px;
   color: #FFFFFF;
-  font-size: 30px;
+  font-size: 38px;
   font-weight: bolder;
   line-height: 1.2;
   text-align: right;
@@ -261,8 +258,8 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  font-size: medium;
-  margin-bottom: 140px;
+  font-size: 18px;
+  margin-bottom: 170px;
   margin-right: 30px;
   color: #FFFFFF;
   line-height: 1.2;
@@ -271,14 +268,14 @@
 
 .image-container {
   position: fixed;
-  top: 33%;
-  left: 71%;
+  top: 300px;
+  right: -100px;
   transform: translate(-55%, -50%);
 }
 
 
 .image-container img {
-  width: 110%;
+  width: 500px;
   height: auto;
   display: none;
 }
@@ -296,8 +293,8 @@
   position: fixed;
   max-width: 440px;/* Adjust as needed */
   overflow: hidden;
-  width: 26vw;
-  margin-left: 60px;
+  width: 430px;
+  margin-left: 100px;
   padding: 10px;/* Add padding to give some space */
 }
 
@@ -322,118 +319,151 @@
 
 /*end slider and dots*/
 
-/* large laptop screen  */
-@media only screen and (min-width: 1200px) and (max-width: 1600px) and (min-height: 700px) and (max-height: 900px) {
-
-  .slider-container {
-    width: 23vw;
-  }
-
-}
-
-/*laptop screen  */
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
- 
+/*New Media querry*/
+/* Extra large devices (large laptops and desktops, 1800px  ) */
+@media only screen and (max-width: 1800px) {
   .login-form-container {
-    width: 28vw;
+    max-width: 400px;
   }
-
   .slider-container {
-    width: 28vw;
+    max-width: 400px;
   }
-
-}
-
-/* Tablet  */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-  .login-form-container {
-    width: 37vw;
+  .image-container {
+    top: 250px;
+    right: -150px;
   }
-
-  .slider-container {
-    width: 37vw;
+  .image-container img {
+    width: 500px;
   }
-
+  .blue-square {
+    width: 550px;
+  }
   .blue-title {
-    font-size: 23px;
+    font-size: 34px;
   }
-
   .blue-para {
-    font-size: 15px;
+    font-size: 18px;
   }
-
 }
 
-
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-
+/* Extra large devices (large laptops and desktops, 1200px ) */
+@media only screen and (max-width: 1200px) {
   .login-form-container {
-    width: 40vw;
+    max-width: 350px;
   }
-
   .slider-container {
-    width: 40vw;
+    max-width: 350px;
   }
 
+  .image-container {
+    top: 250px;
+    right: -150px;
+  }
+  .image-container img {
+    width: 450px;
+  }
+  .blue-square {
+    width: 500px;
+  }
   .blue-title {
-    font-size: 17.6px;
+    font-size: 33px;
   }
-
   .blue-para {
-    font-size: 12px;
+    font-size: 17px;
   }
+}
 
-  .learn-more-btn {
-    padding: 3px;
-    width: 100px;
-    height: 30px;
-    font-size: small;
+/* Large devices (laptops/desktops, 992px ) */
+@media only screen and (max-width: 992px) {
+  .login-form-container {
+    max-width: 310px;
+    margin-left: 40px;
   }
-
-  .main-logo {
-    margin-bottom: 20px;
+  .slider-container {
+    max-width: 310px;
+    margin-left: 40px;
   }
+  .image-container img {
+    width: 420px;
+  }
+  .image-container {
+    top: 260px;
+    right: -170px;
+  }
+  .welcome-b-title {
+    font-size: 13px;
+  }
+  .login-title {
+    font-size: 30px;
+  }
+  .blue-square {
+    width: 400px;
+  }
+  .blue-title {
+    font-size: 26px;
+  }
+  .blue-para {
+    font-size: 16px;
+  }
+}
 
+/* Medium devices (landscape tablets, 768px) */
+@media only screen and (max-width: 768px) {
+  .login-form-container {
+    max-width: 280px;
+    margin-left: 20px;
+  }
+  .slider-container {
+    max-width: 280px;
+    margin-left: 20px;
+  }
+  .image-container img {
+    width: 340px;
+  }
+  .image-container {
+    top: 220px;
+    right: -150px;
+  }
   .welcome-b-title {
     font-size: 12px;
   }
-  
   .login-title {
-    font-size: 24px;
+    font-size: 28px;
   }
-  
-  .form-label {
-    font-size: 11px;
+  .blue-square {
+    width: 300px;
   }
-  
-  .form-check-label {
-    font-size: 10px;
+  .blue-title {
+    font-size: 20px;
+    margin-right: 20px;
   }
-
-  .forgot-password-link {
-    margin-top: 6px;
-    font-size: 10px;
+  .blue-para {
+    font-size: 12px;
+    margin-bottom: 190px;
+    margin-right: 20px;
   }
-
-
+  .learn-more-btn {
+    margin-right: 20px;
+  }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 599px){
-  .blue-square {
-    display: none;
-  }
-
-  .login-form-container {
-    margin: auto;
-    width: 60vw;
-    margin-top: 30px;
-  }
-
+/* Small devices (large phones) */
+@media only screen and (max-width: 620px) {
   .slider-container {
     display: none;
   }
+  .blue-square {
+    display: none;
+  }
+  .login-form-container {
+    margin: 0;
+  }
 
-
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
 
 }
