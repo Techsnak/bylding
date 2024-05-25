@@ -281,7 +281,6 @@
 /*start slider and dots*/
 .slider-container {
   position: fixed;
-  max-width: 440px;/* Adjust as needed */
   overflow: hidden;
   width: 430px;
   margin-left: 100px;
@@ -487,4 +486,32 @@ body {
     margin: 0px 5px;
   }
 
+}
+
+  /* Styles for iPad Pro */
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px){
+  .login-form-container {
+    max-width: 400px;
+    margin-top: 250px;
+    margin-left: 50px;
+  }
+  .slider-container {
+    max-width: 400px;
+    margin-left: 50px;
+  }
+  .image-container {
+    top: 400px;
+    right: -290px;
+  }
+  .image-container img {
+    width: 570px;
+  }
+  .blue-title {
+    margin-bottom: 480px;
+  }
+  .blue-para {
+    font-size: 19px;
+    margin-bottom: 350px;
+  }
 }
