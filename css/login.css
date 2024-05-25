@@ -550,3 +550,37 @@ body {
       font-size: 20px;
     }
   }
+
+    /* Styles for iPad Mini */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (min-device-height: 1024px) and (max-device-height: 1024px) {
+      .login-form-container {
+        padding: 25px;
+        max-width: 340px;
+        margin-top: 150px;
+        margin-left: 40px;
+      }
+      .slider-container {
+        max-width: 340px;
+        margin-left: 30px;
+      }
+      .image-container {
+        top: 250px;
+        right: -270px;
+      }
+      .image-container img {
+        width: 420px;
+      }
+      .blue-title {
+        margin-bottom: 500px;
+      }
+      .blue-para {
+        font-size: 17px;
+        margin-bottom: 400px;
+        font-size: 13px;
+      }
+      .learn-more-btn {
+        width: 250px;
+        height: 40px;
+        font-size: 18px;
+      }
+    }
