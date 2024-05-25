@@ -401,20 +401,20 @@
 /* Medium devices (landscape tablets, 768px) */
 @media only screen and (max-width: 768px) {
   .login-form-container {
-    max-width: 280px;
-    margin-left: 20px;
-    padding: 15px;
+    max-width: 320px;
+    margin-left: 40px;
+    padding: 25px;
   }
   .slider-container {
-    max-width: 280px;
-    margin-left: 20px;
+    max-width: 320px;
+    margin-left: 40px;
   }
   .image-container img {
-    width: 340px;
+    width: 380px;
   }
   .image-container {
-    top: 220px;
-    right: -150px;
+    top: 230px;
+    right: -220px;
   }
   .welcome-b-title {
     font-size: 12px;
