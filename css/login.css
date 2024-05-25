@@ -508,10 +508,15 @@ body {
     width: 570px;
   }
   .blue-title {
-    margin-bottom: 480px;
+    margin-bottom: 580px;
   }
   .blue-para {
     font-size: 19px;
-    margin-bottom: 350px;
+    margin-bottom: 450px;
+  }
+  .learn-more-btn {
+    width: 430px;
+    height: 50px;
+    font-size: 20px;
   }
 }
