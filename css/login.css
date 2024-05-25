@@ -489,7 +489,6 @@ body {
 }
 
   /* Styles for iPad Pro */
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px){
   .login-form-container {
     max-width: 400px;
@@ -520,3 +519,34 @@ body {
     font-size: 20px;
   }
 }
+  /* Styles for iPad Air */
+  @media only screen and (min-device-width: 820px) and (max-device-width: 820px) and (min-device-height: 1180px) and (max-device-height: 1180px) {
+    .login-form-container {
+      max-width: 360px;
+      margin-top: 250px;
+      margin-left: 30px;
+    }
+    .slider-container {
+      max-width: 360px;
+      margin-left: 30px;
+    }
+    .image-container {
+      top: 290px;
+      right: -290px;
+    }
+    .image-container img {
+      width: 480px;
+    }
+    .blue-title {
+      margin-bottom: 560px;
+    }
+    .blue-para {
+      font-size: 17px;
+      margin-bottom: 450px;
+    }
+    .learn-more-btn {
+      width: 330px;
+      height: 50px;
+      font-size: 20px;
+    }
+  }
