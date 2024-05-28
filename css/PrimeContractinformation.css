@@ -492,9 +492,167 @@ header {
 .user-dropdown a {
   color: #8b8b8b;
 }
+/*navlogo mobile*/
+.brandlogo-mobile {
+  margin-left: 5px;
+}
+.brandlogo-mobile img {
+  height: 40px;
+}
+
 
 @media only screen and (max-width: 992px) {
   #maincontaininputs {
     padding: 15px 30px 15px 30px; /* top right bottom left */
   }
+  .nav-menu {
+    margin-left: 1%;
+  }
+  #menu-link {
+    font-size: 14px; 
+  }
+  .nav-search {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .nav-search input {
+    width: 200px;
+  }
+  .brand-logo img {
+    height: 50px;
+  }
+  .nav-search input {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 690px){
+  .brand-logo img {
+    height: 30px;
+  }
+  #menu-link {
+    font-size: 14px; 
+  }
+  .nav-items img.flag,
+  .nav-items i.fas.fa-moon,
+  .nav-items img.user {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .nav-items i.fas.fa-moon {
+    font-size: 25px;
+  }
+  .nav-items img.user {
+    width: 45px;
+    height: 45px;
+  }
+  /*submenu*/
+.submenu-title span {
+  font-size: 18px;
+  padding-right: 15px;
+}
+.submenu-list {
+  margin-left: 25px;
+}
+.submenu-list li a {
+  font-size: 14px;
+  font-weight: 500;
+
+}
+.submenu-list li {
+  padding: 0 5px;
+  margin-left: 25px;
+}
+.export-button {
+  margin-top: 14px;
+  font-size: 15px;
+  height: 30px;
+}
+}
+@media only screen and (min-width: 450px) {
+  .brandlogo-mobile{
+    display: none;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .brand-logo{
+    display: none;
+  }
+  #menu-link {
+    font-size: 10px; 
+  }
+  .nav-search input {
+    width: 100px;
+  }
+  .nav-items img.flag,
+.nav-items i.fas.fa-moon,
+.nav-items img.user {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.nav-items i.fas.fa-moon {
+  font-size: 20px;
+}
+.nav-items img.user {
+  width: 40px;
+  height: 40px;
+}
+/*endnav*/
+/*submenu*/
+.submenu-title span {
+  font-size: 14px;
+  padding-right: 15px;
+}
+.submenu-list {
+  margin-left: 15px;
+}
+.submenu-list li a {
+  font-size: 12px;
+  font-weight: 500;
+
+}
+.submenu-list li {
+  padding: 0 5px;
+  margin-left: 15px;
+}
+.export-button {
+  margin-top: 14px;
+  margin-right: 10px;
+  padding: 8px 10px;
+  font-size: 12px;
+  height: 30px;
+  line-height: 15px;
+}
+#btnCancel {
+  width: 80px;
+  height: 40px;
+  font-weight: 500;
+}
+.btn.btn-primary {
+  width: 80px;
+  height: 40px;
+}
+#maincontaininputs {
+  padding: 15px 20px 15px 20px; 
+  max-height: 550px; 
+}
+.ee {
+  margin: 0px 20px 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 375px){
+/*submenu*/
+.submenu-title span {
+  font-size: 14px;
+  padding-right: 5px;
+}
+.submenu-list {
+  margin-left: 5px;
+}
+.submenu-list li {
+  padding: 0 1px;
+  margin-left: 15px;
+}
 }
