@@ -638,6 +638,9 @@ header {
   font-size: 15px;
   height: 30px;
 }
+.fa-angle-down {
+  font-size: 12px;
+}
 }
 @media only screen and (min-width: 450px) {
   .brandlogo-mobile{
